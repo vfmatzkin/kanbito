@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "Chào mừng đến với Kanbito!",
+    "whatWillYouUse": "Bạn sẽ sử dụng Kanbito để làm gì?",
+    "both": "Cả hai",
+    "bothDesc": "Bảng công việc + Ghi chú",
+    "boardOnly": "Chỉ bảng",
+    "boardOnlyDesc": "Quản lý công việc Kanban",
+    "notesOnly": "Chỉ ghi chú",
+    "notesOnlyDesc": "Tài liệu Markdown",
+    "almostReady": "Sắp xong rồi!",
+    "setupPrefs": "Thiết lập tùy chọn của bạn",
+    "yourName": "Tên của bạn",
+    "yourNamePlaceholder": "Nhập tên của bạn",
+    "back": "Quay lại",
+    "getStarted": "Bắt đầu",
+    "changeInSettings": "Bạn có thể thay đổi điều này sau trong Cài đặt",
+    "cloneSuccess": "Kho lưu trữ đã được sao chép thành công!",
+    "connectVia": "Kết nối qua",
+    "dataFolder": "Thư mục dữ liệu",
+    "dataFolderHint": "Nơi lưu trữ các công việc và ghi chú của bạn",
+    "folderNotEmpty": "Thư mục đã chọn không trống. Bạn có muốn xóa và bắt đầu lại không?",
+    "folderNotEmptyClone": "Thư mục sẽ bị xóa và kho lưu trữ sẽ được sao chép. Tiếp tục?",
+    "gitRepo": "Đồng bộ với GitHub (tùy chọn)",
+    "gitRepoHint": "Sao chép kho Kanbito hiện có để đồng bộ giữa các thiết bị",
+    "gitRepoPlaceholder": "user/repo (sử dụng SSH) hoặc URL đầy đủ",
+    "noIdentities": "Không tìm thấy danh tính GitHub - hãy chạy 'gh auth login' trước"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "Bảng",
+    "notes": "Ghi chú"
+  },
+  "user": {
+    "change": "Đổi tên người dùng:",
+    "anonymous": "Ẩn danh"
+  },
+  "save": {
+    "saving": "Đang lưu...",
+    "saved": "Đã lưu",
+    "error": "Lỗi lưu"
+  },
+  "git": {
+    "sync": "Đồng bộ",
+    "syncing": "Đang đồng bộ...",
+    "noRepo": "Không có repo",
+    "upToDate": "✓",
+    "unsaved": "{{count}} chưa lưu",
+    "available": "↓ {{count}} có sẵn",
+    "syncNeeded": "↕ Cần đồng bộ",
+    "syncFailed": "Đồng bộ thất bại"
+  },
+  "conflict": {
+    "title": "Xung đột đồng bộ",
+    "description": "Thay đổi của bạn và thay đổi trên cloud bị trùng. Bạn muốn làm gì?",
+    "keepLocal": "Giữ của bạn",
+    "keepLocalDesc": "Tải phiên bản của bạn lên cloud",
+    "keepCloud": "Giữ cloud",
+    "keepCloudDesc": "Bỏ thay đổi của bạn",
+    "keepCloudBackup": "Giữ cloud + sao lưu",
+    "keepCloudBackupDesc": "Tải phiên bản cloud, thay đổi của bạn được lưu (dùng Hoàn tác để khôi phục)",
+    "decideLater": "Quyết định sau",
+    "recommended": "Đề xuất",
+    "confirmKeepLocal": "Điều này sẽ tải phiên bản của bạn lên cloud. Phiên bản cloud trước vẫn có thể khôi phục từ lịch sử repository.",
+    "confirmKeepCloud": "Điều này sẽ thay thế phiên bản của bạn bằng cloud. Thay đổi cục bộ sẽ bị mất và không thể khôi phục.",
+    "confirmBtn": "Có, tiếp tục",
+    "showDiff": "Hiện khác biệt",
+    "hideDiff": "Ẩn khác biệt",
+    "myChanges": "Chỉnh sửa của bạn",
+    "cloudChanges": "Chỉnh sửa cloud",
+    "legendLocalDel": "Trước đây",
+    "legendLocalAdd": "Bạn đổi thành",
+    "legendRemoteDel": "Trước đây",
+    "legendRemoteAdd": "Đổi thành trên cloud"
+  },
+  "backup": {
+    "restore": "Khôi phục trạng thái trước",
+    "confirmRestore": "Khôi phục về trạng thái trước? Dữ liệu hiện tại sẽ bị thay thế.",
+    "confirmUndo": "Hoàn tác đồng bộ cuối? Dữ liệu trước sẽ được khôi phục.",
+    "restored": "Khôi phục thành công",
+    "restoreFailed": "Khôi phục thất bại",
+    "undo": "Hoàn tác"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "gitSync": "Đồng bộ GitHub",
+    "repository": "Repository GitHub",
+    "repositoryPlaceholder": "user/repo hoặc dán URL GitHub",
+    "connectVia": "Kết nối qua",
+    "testConnection": "Kiểm tra kết nối",
+    "createRepo": "Tạo Repository",
+    "openOnGitHub": "Mở trên GitHub",
+    "creating": "Đang tạo...",
+    "testing": "Đang kiểm tra...",
+    "connectionSuccess": "Kết nối thành công!",
+    "connectionFailed": "Kết nối thất bại",
+    "dataManagement": "Quản lý dữ liệu",
+    "restoreExamples": "Khôi phục ví dụ",
+    "clearExamples": "Xóa ví dụ",
+    "restoreHint": "<strong>Khôi phục ví dụ:</strong> Tải các công việc và ghi chú mẫu để khám phá tính năng",
+    "clearHint": "<strong>Xóa ví dụ:</strong> Xóa công việc và ghi chú mẫu để bắt đầu mới",
+    "clearExamplesTitle": "Xóa dữ liệu mẫu",
+    "close": "Đóng",
+    "save": "Lưu",
+    "notConfigured": "Chưa cấu hình",
+    "username": "Tên người dùng",
+    "usernameHint": "Dùng cho bình luận và ghi công",
+    "usernamePlaceholder": "Tên của bạn",
+    "language": "Ngôn ngữ",
+    "languageHint": "Chọn ngôn ngữ ưa thích",
+    "showSections": "Hiện các mục",
+    "showSectionsHint": "Ít nhất một mục phải được bật"
+  },
+  "task": {
+    "new": "Công việc mới",
+    "edit": "Sửa công việc",
+    "title": "Tiêu đề",
+    "titlePlaceholder": "Tiêu đề công việc",
+    "description": "Mô tả (tùy chọn, hỗ trợ Markdown)",
+    "descPlaceholder": "Chi tiết, user story, ghi chú...",
+    "tags": "Thẻ",
+    "tagsPlaceholder": "Nhập thẻ và nhấn Enter hoặc dấu phẩy",
+    "pasteHint": "Dán hình ảnh trực tiếp với Ctrl+V",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "addTask": "+ Thêm công việc",
+    "addSubtask": "Thêm công việc con",
+    "newSubtaskOf": "Công việc con mới của T{{id}}",
+    "subtasks": "Công việc con",
+    "subtasksCount": "{{count}} công việc con",
+    "noSubtasks": "Không có công việc con",
+    "add": "+ Thêm",
+    "noDescription": "Không có mô tả",
+    "created": "Tạo:",
+    "modified": "Sửa:",
+    "backlog": "Backlog",
+    "restore": "Khôi phục",
+    "delete": "Xóa",
+    "edit_btn": "Sửa",
+    "close": "Đóng",
+    "taskNotFound": "Không tìm thấy công việc",
+    "subtaskOf": "Công việc con của:"
+  },
+  "columns": {
+    "todo": "Cần làm",
+    "doing": "Đang làm",
+    "review": "Chờ xem xét",
+    "done": "Hoàn thành"
+  },
+  "backlog": {
+    "title": "Backlog",
+    "restore": "Khôi phục về Cần làm",
+    "delete": "Xóa"
+  },
+  "trash": {
+    "title": "Thùng rác",
+    "empty": "Làm trống",
+    "emptyConfirm": "Làm trống thùng rác? {{count}} công việc sẽ bị xóa vĩnh viễn.",
+    "permanentDelete": "Xóa vĩnh viễn",
+    "permanentDeleteConfirm": "Xóa vĩnh viễn công việc này? Không thể hoàn tác."
+  },
+  "comments": {
+    "title": "Bình luận",
+    "titleCount": "Bình luận ({{count}})",
+    "placeholder": "Viết bình luận (hỗ trợ Markdown)...",
+    "send": "Gửi",
+    "deleteConfirm": "Xóa bình luận này?"
+  },
+  "notes": {
+    "title": "Ghi chú",
+    "new": "Ghi chú mới",
+    "select": "Chọn ghi chú",
+    "titlePlaceholder": "Tiêu đề ghi chú",
+    "contentPlaceholder": "Nội dung Markdown...",
+    "edit": "Sửa",
+    "addChild": "+ Ghi chú con",
+    "delete": "Xóa",
+    "deleteConfirm": "Xóa ghi chú này và tất cả ghi chú con?",
+    "noteNotFound": "Không tìm thấy ghi chú"
+  },
+  "confirm": {
+    "clearAllData": "Bạn có chắc muốn xóa TẤT CẢ công việc, ghi chú và hình ảnh?\n\nKhông thể hoàn tác!",
+    "clearExamples": "Xóa các công việc và ghi chú mẫu?\n\nNội dung của bạn sẽ được giữ lại.",
+    "restoreExamples": "Điều này sẽ thay thế tất cả dữ liệu hiện tại bằng công việc và ghi chú mẫu.\n\nTiếp tục?",
+    "reloadExamples": "Đã đổi ngôn ngữ. Bạn có muốn tải lại công việc và ghi chú mẫu bằng ngôn ngữ mới?\n\nTất cả dữ liệu hiện tại sẽ bị thay thế."
+  },
+  "prompt": {
+    "subtasksMove": "Công việc này có {{count}} công việc con.\n\nNhập:\n  \"all\" - di chuyển công việc và công việc con vào backlog\n  \"only\" - chỉ di chuyển công việc này (công việc con thành mồ côi)\n  \"cancel\" - không làm gì",
+    "subtasksDelete": "Công việc này có {{count}} công việc con.\n\nNhập:\n  \"all\" - xóa công việc và công việc con\n  \"only\" - chỉ xóa công việc này (công việc con thành mồ côi)\n  \"cancel\" - không làm gì",
+    "subtasksRestore": "Công việc này có {{count}} công việc con trong {{location}}.\n\nNhập:\n  \"all\" - khôi phục công việc và công việc con\n  \"only\" - chỉ khôi phục công việc này\n  \"cancel\" - không làm gì",
+    "subtasksPermanent": "Công việc này có {{count}} công việc con trong thùng rác.\n\nNhập:\n  \"all\" - xóa vĩnh viễn công việc và công việc con\n  \"only\" - chỉ xóa công việc này\n  \"cancel\" - không làm gì",
+    "defaultAll": "all",
+    "backlog": "backlog",
+    "theTrash": "thùng rác"
+  },
+  "xref": {
+    "taskNotFound": "Không tìm thấy công việc",
+    "noteNotFound": "Không tìm thấy ghi chú"
+  },
+  "filter": {
+    "title": "Lọc theo thẻ",
+    "active": "đang hoạt động",
+    "clear": "Xóa",
+    "manageGroups": "Quản lý nhóm thẻ",
+    "any": "Bất kỳ",
+    "all": "Tất cả",
+    "noGroups": "Chưa có nhóm thẻ. Tạo một nhóm để sắp xếp thẻ.",
+    "groupName": "Tên nhóm",
+    "addGroup": "Thêm nhóm",
+    "untitledGroup": "Chưa đặt tên",
+    "dropHere": "Thả thẻ vào đây"
+  },
+  "readme": {
+    "title": "Dữ liệu Kanbito",
+    "intro": "Repository này chứa dữ liệu từ [Kanbito](https://github.com/vfmatzkin/kanbito).",
+    "filesTitle": "Tệp",
+    "filesBoard": "`board.json` - Metadata công việc (cột, danh sách công việc, backlog, thùng rác)",
+    "filesNotes": "`notes.json` - Metadata ghi chú (cấu trúc cây)",
+    "filesTasks": "`tasks/` - Mô tả công việc trong Markdown (T1.md, T2.md, ...)",
+    "filesNotesDir": "`notes/` - Nội dung ghi chú trong Markdown (N1.md, N2.md, ...)",
+    "filesImages": "`images/` - Hình ảnh đính kèm",
+    "filesSettings": "`.kanbito.json` - Cài đặt ứng dụng (cấu hình git sync, ngôn ngữ, tên người dùng)",
+    "restoreTitle": "Khôi phục phiên bản trước",
+    "restoreIntro": "Nếu bạn cần khôi phục dữ liệu về trạng thái trước:",
+    "option1Title": "Tùy chọn 1: Sử dụng giao diện web GitHub",
+    "option1Steps": "1. Vào repository trên GitHub\n2. Nhấp \"Commits\" để xem lịch sử\n3. Tìm commit bạn muốn khôi phục\n4. Nhấp vào hash commit, rồi nhấp \"Browse files\"\n5. Tải các tệp bạn cần (board.json, notes.json, v.v.)\n6. Thay thế các tệp trong thư mục dữ liệu Kanbito",
+    "option2Title": "Tùy chọn 2: Sử dụng lệnh Git",
+    "option2Code": "# Xem lịch sử commit\ngit log --oneline\n\n# Khôi phục về commit cụ thể (thay COMMIT_HASH)\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# Hoặc khôi phục tất cả về commit cụ thể\ngit reset --hard COMMIT_HASH",
+    "option3Title": "Tùy chọn 3: Sử dụng tính năng \"Restore\" của GitHub",
+    "option3Steps": "1. Vào repository trên GitHub\n2. Nhấp \"Commits\"\n3. Tìm commit trước thay đổi không mong muốn\n4. Nhấp \"...\" → \"Revert changes in this commit\" (tạo commit mới)",
+    "note": "Thư mục `.kanbito-backup/` (nếu có) chỉ là cục bộ và không được đồng bộ lên GitHub."
+  },
+  "examples": {
+    "clearHint": "Đây là các công việc mẫu. Nhấp để bắt đầu mới!",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "Loại",
+        "tags": [
+          "lỗi",
+          "ý-tưởng"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "Lĩnh vực",
+        "tags": [
+          "công-việc",
+          "cá-nhân"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "Khi nào",
+        "tags": [
+          "hôm-nay",
+          "tuần-này",
+          "một-ngày-nào-đó"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Chào mừng đến với Kanbito!",
+        "tags": [
+          "hướng-dẫn"
+        ],
+        "comment": "Đây là **bình luận** hỗ trợ Markdown!\n\nBạn có thể tham chiếu công việc khác như [[T2]] hoặc ghi chú như [[N1]].",
+        "description": "## Chào mừng đến với Kanbito!\n\nĐây là **bảng Kanban** cá nhân của bạn. Bạn có thể:\n\n- **Kéo & thả** công việc giữa các cột\n- **Thêm thẻ** để sắp xếp và lọc công việc\n- **Sử dụng Markdown** trong mô tả và bình luận\n- **Liên kết công việc** với `[[T2]]` hoặc ghi chú với `[[N1]]`\n\n### Thử các tính năng này:\n1. Nhấp **nút lọc** (góc dưới phải) để lọc theo thẻ\n2. Di chuột vào công việc và nhấp **+** để thêm công việc con\n3. Nhấp **⚙️** để bật đồng bộ GitHub\n\nXem [[T2]] để tìm hiểu về lọc thẻ!"
+      },
+      "2": {
+        "title": "Thử lọc công việc của bạn",
+        "tags": [
+          "hướng-dẫn",
+          "hôm-nay"
+        ],
+        "description": "## Học cách lọc theo thẻ\n\nKanbito cho phép bạn lọc công việc bằng **nhóm thẻ**. Thử ngay:\n\n1. Nhấp **nút lọc** ở góc dưới phải\n2. Bạn sẽ thấy 3 nhóm mẫu:\n   - **Loại**: lỗi, ý-tưởng\n   - **Lĩnh vực**: công-việc, cá-nhân\n   - **Khi nào**: hôm-nay, tuần-này, một-ngày-nào-đó\n\n### Cách hoạt động:\n- Nhấp vào thẻ để lọc bảng\n- Các thẻ trong cùng nhóm dùng logic **HOẶC** (hiển thị bất kỳ kết quả nào khớp)\n- Các thẻ khác nhóm dùng logic **VÀ** (phải khớp tất cả)\n\n### Tùy chỉnh nhóm của bạn:\nNhấp \"Quản lý nhóm thẻ\" để tạo hệ thống sắp xếp riêng!\n\n> Thử lọc theo `công-việc` để chỉ xem công việc liên quan đến công việc."
+      },
+      "3": {
+        "title": "Sửa lỗi đánh máy trang đăng nhập",
+        "tags": [
+          "lỗi",
+          "công-việc",
+          "hôm-nay"
+        ],
+        "description": "Có lỗi đánh máy trên trang đăng nhập cần sửa.\n\n**Vị trí:** `src/pages/Login.tsx`\n\n- [ ] Tìm lỗi đánh máy\n- [ ] Sửa nó\n- [ ] Kiểm tra trang"
+      },
+      "4": {
+        "title": "Thêm chế độ tối",
+        "tags": [
+          "ý-tưởng",
+          "công-việc",
+          "tuần-này"
+        ],
+        "description": "Người dùng yêu cầu tùy chọn chế độ tối.\n\n### Yêu cầu:\n- Nút bật/tắt trong cài đặt\n- Lưu tùy chọn\n- Phát hiện tùy chọn hệ thống\n\n### Ghi chú:\nXem [[N2]] để biết thêm ý tưởng dự án."
+      },
+      "5": {
+        "title": "Lên kế hoạch chuyến đi cuối tuần",
+        "tags": [
+          "cá-nhân",
+          "tuần-này"
+        ],
+        "description": "Lên kế hoạch cho chuyến đi cuối tuần.\n\n- [ ] Chọn điểm đến\n- [ ] Đặt chỗ ở\n- [ ] Lên kế hoạch hoạt động"
+      },
+      "6": {
+        "title": "Cập nhật tài liệu",
+        "tags": [
+          "công-việc"
+        ],
+        "description": "Tài liệu đã được cập nhật với các thay đổi API mới nhất."
+      },
+      "7": {
+        "title": "Học ngôn ngữ mới",
+        "tags": [
+          "cá-nhân",
+          "một-ngày-nào-đó"
+        ],
+        "description": "Học một ngôn ngữ lập trình hoặc ngôn ngữ nói mới.\n\nÝ tưởng:\n- Rust\n- Go\n- Tiếng Nhật"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "Chào mừng đến với Ghi chú",
+        "content": "# Chào mừng đến với Ghi chú\n\nGhi chú hoàn hảo cho tài liệu, ý tưởng và nội dung dài.\n\n## Tính năng\n\n- **Cấu trúc phân cấp** - Tạo ghi chú con lồng nhau\n- **Hỗ trợ Markdown** - Định dạng đầy đủ\n- **Tham chiếu chéo** - Liên kết đến công việc với `[[T1]]`\n- **Kéo & thả** - Sắp xếp lại ghi chú\n\n## Bắt đầu\n\nNhấp nút **+** để tạo ghi chú mới. Sử dụng thanh bên để điều hướng."
+      },
+      "2": {
+        "title": "Ý tưởng dự án",
+        "content": "# Ý tưởng dự án\n\nNơi để brainstorm và thu thập ý tưởng.\n\n## Tính năng cần xây dựng\n- [ ] Chế độ tối\n- [ ] Xuất PDF\n- [ ] Ứng dụng di động\n\n## Nghiên cứu\n- Kiểm tra tính năng đối thủ\n- Chủ đề phản hồi người dùng\n\n---\n*Thêm ý tưởng của riêng bạn ở đây!*"
+      },
+      "3": {
+        "title": "Tham khảo nhanh",
+        "content": "# Tham khảo nhanh\n\n## Phím tắt\n- `Esc` - Đóng hộp thoại\n- `Ctrl+Enter` - Lưu ghi chú/bình luận\n\n## Tham chiếu chéo\n- `[[T5]]` → Liên kết đến công việc 5\n- `[[N2]]` → Liên kết đến ghi chú 2\n\n## Hình ảnh\nDán hình ảnh trực tiếp với `Ctrl+V`"
+      }
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "Bem-vindo ao Kanbito!",
+    "whatWillYouUse": "Para que você usará o Kanbito?",
+    "both": "Ambos",
+    "bothDesc": "Quadro de tarefas + Notas",
+    "boardOnly": "Somente quadro",
+    "boardOnlyDesc": "Gerenciamento de tarefas Kanban",
+    "notesOnly": "Somente notas",
+    "notesOnlyDesc": "Documentação Markdown",
+    "almostReady": "Quase pronto!",
+    "setupPrefs": "Configure suas preferências",
+    "yourName": "Seu nome",
+    "yourNamePlaceholder": "Digite seu nome",
+    "back": "Voltar",
+    "getStarted": "Começar",
+    "changeInSettings": "Você pode alterar isso nas Configurações",
+    "cloneSuccess": "Repositório clonado com sucesso!",
+    "connectVia": "Conectar via",
+    "dataFolder": "Pasta de dados",
+    "dataFolderHint": "Onde suas tarefas e notas são salvas",
+    "folderNotEmpty": "A pasta selecionada não está vazia. Deseja limpá-la e começar do zero?",
+    "folderNotEmptyClone": "A pasta será limpa e o repositório será clonado. Continuar?",
+    "gitRepo": "Sincronizar com GitHub (opcional)",
+    "gitRepoHint": "Clone um repositório Kanbito existente para sincronizar entre dispositivos",
+    "gitRepoPlaceholder": "user/repo (usa SSH) ou URL completa",
+    "noIdentities": "Nenhuma identidade GitHub encontrada - execute 'gh auth login' primeiro"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "Quadro",
+    "notes": "Notas"
+  },
+  "user": {
+    "change": "Alterar nome de usuário:",
+    "anonymous": "Anônimo"
+  },
+  "save": {
+    "saving": "Salvando...",
+    "saved": "Salvo",
+    "error": "Erro ao salvar"
+  },
+  "git": {
+    "sync": "Sincronizar",
+    "syncing": "Sincronizando...",
+    "noRepo": "Sem repositório",
+    "upToDate": "✓",
+    "unsaved": "{{count}} não salvos",
+    "available": "↓ {{count}} disponíveis",
+    "syncNeeded": "↕ Sincronização necessária",
+    "syncFailed": "Falha na sincronização"
+  },
+  "conflict": {
+    "title": "Conflito de sincronização",
+    "description": "Suas alterações e as alterações na nuvem se sobrepõem. O que você gostaria de fazer?",
+    "keepLocal": "Manter as suas",
+    "keepLocalDesc": "Enviar sua versão para a nuvem",
+    "keepCloud": "Manter nuvem",
+    "keepCloudDesc": "Descartar suas alterações",
+    "keepCloudBackup": "Manter nuvem + backup",
+    "keepCloudBackupDesc": "Baixar versão da nuvem, suas alterações são salvas (use Desfazer para restaurar)",
+    "decideLater": "Decidir depois",
+    "recommended": "Recomendado",
+    "confirmKeepLocal": "Isso enviará sua versão para a nuvem. A versão anterior da nuvem ainda pode ser recuperada do histórico do repositório.",
+    "confirmKeepCloud": "Isso substituirá sua versão pela da nuvem. Suas alterações locais serão perdidas e não poderão ser recuperadas.",
+    "confirmBtn": "Sim, continuar",
+    "showDiff": "Mostrar diferenças",
+    "hideDiff": "Ocultar diferenças",
+    "myChanges": "Suas edições",
+    "cloudChanges": "Edições da nuvem",
+    "legendLocalDel": "Era",
+    "legendLocalAdd": "Você alterou para",
+    "legendRemoteDel": "Era",
+    "legendRemoteAdd": "Alterado na nuvem para"
+  },
+  "backup": {
+    "restore": "Restaurar estado anterior",
+    "confirmRestore": "Restaurar estado anterior? Isso substituirá seus dados atuais.",
+    "confirmUndo": "Desfazer a última sincronização? Isso restaurará seus dados anteriores.",
+    "restored": "Restaurado com sucesso",
+    "restoreFailed": "Falha na restauração",
+    "undo": "Desfazer"
+  },
+  "settings": {
+    "title": "Configurações",
+    "gitSync": "Sincronização GitHub",
+    "repository": "Repositório GitHub",
+    "repositoryPlaceholder": "usuário/repo ou cole a URL do GitHub",
+    "connectVia": "Conectar via",
+    "testConnection": "Testar conexão",
+    "createRepo": "Criar repositório",
+    "openOnGitHub": "Abrir no GitHub",
+    "creating": "Criando...",
+    "testing": "Testando...",
+    "connectionSuccess": "Conexão bem-sucedida!",
+    "connectionFailed": "Falha na conexão",
+    "dataManagement": "Gerenciamento de dados",
+    "restoreExamples": "Restaurar exemplos",
+    "clearExamples": "Limpar exemplos",
+    "restoreHint": "<strong>Restaurar exemplos:</strong> Carregar tarefas e notas de exemplo para explorar os recursos",
+    "clearHint": "<strong>Limpar exemplos:</strong> Remover tarefas e notas de exemplo para começar do zero",
+    "clearExamplesTitle": "Limpar dados de exemplo",
+    "close": "Fechar",
+    "save": "Salvar",
+    "notConfigured": "Não configurado",
+    "username": "Nome de usuário",
+    "usernameHint": "Usado para comentários e atribuições",
+    "usernamePlaceholder": "Seu nome",
+    "language": "Idioma",
+    "languageHint": "Selecione seu idioma preferido",
+    "showSections": "Mostrar seções",
+    "showSectionsHint": "Pelo menos uma deve estar habilitada"
+  },
+  "task": {
+    "new": "Nova tarefa",
+    "edit": "Editar tarefa",
+    "title": "Título",
+    "titlePlaceholder": "Título da tarefa",
+    "description": "Descrição (opcional, suporta Markdown)",
+    "descPlaceholder": "Detalhes, história de usuário, notas...",
+    "tags": "Tags",
+    "tagsPlaceholder": "Digite uma tag e pressione Enter ou vírgula",
+    "pasteHint": "Cole imagens diretamente com Ctrl+V",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "addTask": "+ Adicionar tarefa",
+    "addSubtask": "Adicionar subtarefa",
+    "newSubtaskOf": "Nova subtarefa de T{{id}}",
+    "subtasks": "Subtarefas",
+    "subtasksCount": "{{count}} subtarefa(s)",
+    "noSubtasks": "Sem subtarefas",
+    "add": "+ Adicionar",
+    "noDescription": "Sem descrição",
+    "created": "Criado:",
+    "modified": "Modificado:",
+    "backlog": "Backlog",
+    "restore": "Restaurar",
+    "delete": "Excluir",
+    "edit_btn": "Editar",
+    "close": "Fechar",
+    "taskNotFound": "Tarefa não encontrada",
+    "subtaskOf": "Subtarefa de:"
+  },
+  "columns": {
+    "todo": "A fazer",
+    "doing": "Em andamento",
+    "review": "Em revisão",
+    "done": "Concluído"
+  },
+  "backlog": {
+    "title": "Backlog",
+    "restore": "Restaurar para A fazer",
+    "delete": "Excluir"
+  },
+  "trash": {
+    "title": "Lixeira",
+    "empty": "Esvaziar",
+    "emptyConfirm": "Esvaziar lixeira? {{count}} tarefa(s) serão excluídas permanentemente.",
+    "permanentDelete": "Excluir permanentemente",
+    "permanentDeleteConfirm": "Excluir esta tarefa permanentemente? Isso não pode ser desfeito."
+  },
+  "comments": {
+    "title": "Comentários",
+    "titleCount": "Comentários ({{count}})",
+    "placeholder": "Escreva um comentário (suporta Markdown)...",
+    "send": "Enviar",
+    "deleteConfirm": "Excluir este comentário?"
+  },
+  "notes": {
+    "title": "Notas",
+    "new": "Nova nota",
+    "select": "Selecione uma nota",
+    "titlePlaceholder": "Título da nota",
+    "contentPlaceholder": "Conteúdo em Markdown...",
+    "edit": "Editar",
+    "addChild": "+ Subnota",
+    "delete": "Excluir",
+    "deleteConfirm": "Excluir esta nota e todas as suas subnotas?",
+    "noteNotFound": "Nota não encontrada"
+  },
+  "confirm": {
+    "clearAllData": "Tem certeza de que deseja excluir TODAS as tarefas, notas e imagens?\n\nIsso não pode ser desfeito!",
+    "clearExamples": "Remover tarefas e notas de exemplo?\n\nSeu próprio conteúdo será mantido.",
+    "restoreExamples": "Isso substituirá todos os dados atuais por tarefas e notas de exemplo.\n\nContinuar?",
+    "reloadExamples": "Idioma alterado. Deseja recarregar as tarefas e notas de exemplo no novo idioma?\n\nIsso substituirá todos os dados atuais."
+  },
+  "prompt": {
+    "subtasksMove": "Esta tarefa tem {{count}} subtarefa(s).\n\nDigite:\n  \"all\" - mover tarefa e subtarefas para o backlog\n  \"only\" - mover apenas esta tarefa (subtarefas ficarão órfãs)\n  \"cancel\" - não fazer nada",
+    "subtasksDelete": "Esta tarefa tem {{count}} subtarefa(s).\n\nDigite:\n  \"all\" - excluir tarefa e subtarefas\n  \"only\" - excluir apenas esta tarefa (subtarefas ficarão órfãs)\n  \"cancel\" - não fazer nada",
+    "subtasksRestore": "Esta tarefa tem {{count}} subtarefa(s) no(a) {{location}}.\n\nDigite:\n  \"all\" - restaurar tarefa e subtarefas\n  \"only\" - restaurar apenas esta tarefa\n  \"cancel\" - não fazer nada",
+    "subtasksPermanent": "Esta tarefa tem {{count}} subtarefa(s) na lixeira.\n\nDigite:\n  \"all\" - excluir permanentemente tarefa e subtarefas\n  \"only\" - excluir apenas esta tarefa\n  \"cancel\" - não fazer nada",
+    "defaultAll": "all",
+    "backlog": "backlog",
+    "theTrash": "lixeira"
+  },
+  "xref": {
+    "taskNotFound": "Tarefa não encontrada",
+    "noteNotFound": "Nota não encontrada"
+  },
+  "filter": {
+    "title": "Filtrar por tags",
+    "active": "ativos",
+    "clear": "Limpar",
+    "manageGroups": "Gerenciar grupos de tags",
+    "any": "Qualquer",
+    "all": "Todos",
+    "noGroups": "Nenhum grupo de tags ainda. Crie um para organizar suas tags.",
+    "groupName": "Nome do grupo",
+    "addGroup": "Adicionar grupo",
+    "untitledGroup": "Sem título",
+    "dropHere": "Solte tags aqui"
+  },
+  "readme": {
+    "title": "Dados do Kanbito",
+    "intro": "Este repositório contém dados do [Kanbito](https://github.com/vfmatzkin/kanbito), um aplicativo de quadro Kanban pessoal.",
+    "filesTitle": "Arquivos",
+    "filesBoard": "`board.json` - Metadados de tarefas (colunas, lista de tarefas, backlog, lixeira)",
+    "filesNotes": "`notes.json` - Metadados de notas (estrutura em árvore)",
+    "filesTasks": "`tasks/` - Descrições de tarefas em Markdown (T1.md, T2.md, ...)",
+    "filesNotesDir": "`notes/` - Conteúdo de notas em Markdown (N1.md, N2.md, ...)",
+    "filesImages": "`images/` - Imagens anexadas",
+    "filesSettings": "`.kanbito.json` - Configurações do app (config de sincronização git, idioma, nome de usuário)",
+    "restoreTitle": "Restaurando uma versão anterior",
+    "restoreIntro": "Se você precisar restaurar seus dados para um estado anterior:",
+    "option1Title": "Opção 1: Usando a interface web do GitHub",
+    "option1Steps": "1. Vá para seu repositório no GitHub\n2. Clique em \"Commits\" para ver o histórico\n3. Encontre o commit para o qual deseja restaurar\n4. Clique no hash do commit, depois clique em \"Browse files\"\n5. Baixe os arquivos necessários (board.json, notes.json, etc.)\n6. Substitua os arquivos na pasta de dados do Kanbito",
+    "option2Title": "Opção 2: Usando comandos Git",
+    "option2Code": "# Ver histórico de commits\ngit log --oneline\n\n# Restaurar para um commit específico (substitua COMMIT_HASH)\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# Ou restaurar tudo para um commit específico\ngit reset --hard COMMIT_HASH",
+    "option3Title": "Opção 3: Usando o recurso \"Restaurar\" do GitHub",
+    "option3Steps": "1. Vá para seu repositório no GitHub\n2. Clique em \"Commits\"\n3. Encontre o commit antes da alteração indesejada\n4. Clique \"...\" → \"Revert changes in this commit\" (cria um novo commit)",
+    "note": "A pasta `.kanbito-backup/` (se existir) é apenas local e não é sincronizada com o GitHub."
+  },
+  "examples": {
+    "clearHint": "Estas são tarefas de exemplo. Clique para começar do zero!",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "Tipo",
+        "tags": [
+          "bug",
+          "ideia"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "Área",
+        "tags": [
+          "trabalho",
+          "pessoal"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "Quando",
+        "tags": [
+          "hoje",
+          "esta-semana",
+          "algum-dia"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Bem-vindo ao Kanbito!",
+        "tags": [
+          "guia"
+        ],
+        "comment": "Este é um **comentário** com suporte a Markdown!\n\nVocê pode referenciar outras tarefas como [[T2]] ou notas como [[N1]].",
+        "description": "## Bem-vindo ao Kanbito!\n\nEste é seu **quadro Kanban** pessoal. Aqui está o que você pode fazer:\n\n- **Arraste e solte** tarefas entre colunas\n- **Adicione tags** para organizar e filtrar tarefas\n- **Use Markdown** em descrições e comentários\n- **Vincule tarefas** com `[[T2]]` ou notas com `[[N1]]`\n\n### Experimente estes recursos:\n1. Clique no **botão de filtro** (canto inferior direito) para filtrar por tags\n2. Passe o mouse sobre uma tarefa e clique **+** para adicionar subtarefas\n3. Clique em **⚙️** para ativar a sincronização com GitHub\n\nVeja [[T2]] para aprender sobre filtro por tags!"
+      },
+      "2": {
+        "title": "Experimente filtrar suas tarefas",
+        "tags": [
+          "guia",
+          "hoje"
+        ],
+        "description": "## Aprenda a filtrar por tags\n\nO Kanbito permite filtrar tarefas usando **grupos de tags**. Experimente agora:\n\n1. Clique no **botão de filtro** no canto inferior direito\n2. Você verá 3 grupos de exemplo:\n   - **Tipo**: bug, ideia\n   - **Área**: trabalho, pessoal\n   - **Quando**: hoje, esta-semana, algum-dia\n\n### Como funciona:\n- Clique em uma tag para filtrar o quadro\n- Tags no mesmo grupo usam lógica **OU** (mostra qualquer correspondência)\n- Tags entre grupos usam lógica **E** (deve corresponder a todos)\n\n### Personalize seus grupos:\nClique em \"Gerenciar grupos de tags\" para criar seu próprio sistema de organização!\n\n> Tente filtrar por `trabalho` para ver apenas tarefas relacionadas ao trabalho."
+      },
+      "3": {
+        "title": "Corrigir erro de digitação na página de login",
+        "tags": [
+          "bug",
+          "trabalho",
+          "hoje"
+        ],
+        "description": "Há um erro de digitação na página de login que precisa ser corrigido.\n\n**Local:** `src/pages/Login.tsx`\n\n- [ ] Encontrar o erro\n- [ ] Corrigi-lo\n- [ ] Testar a página"
+      },
+      "4": {
+        "title": "Adicionar botão de modo escuro",
+        "tags": [
+          "ideia",
+          "trabalho",
+          "esta-semana"
+        ],
+        "description": "Os usuários solicitaram uma opção de modo escuro.\n\n### Requisitos:\n- Alternador nas configurações\n- Persistir preferência\n- Detecção de preferência do sistema\n\n### Notas:\nConfira [[N2]] para mais ideias de projeto."
+      },
+      "5": {
+        "title": "Planejar viagem de fim de semana",
+        "tags": [
+          "pessoal",
+          "esta-semana"
+        ],
+        "description": "Planejar uma escapada de fim de semana.\n\n- [ ] Escolher destino\n- [ ] Reservar hospedagem\n- [ ] Planejar atividades"
+      },
+      "6": {
+        "title": "Atualizar documentação",
+        "tags": [
+          "trabalho"
+        ],
+        "description": "A documentação foi atualizada com as últimas alterações da API."
+      },
+      "7": {
+        "title": "Aprender um novo idioma",
+        "tags": [
+          "pessoal",
+          "algum-dia"
+        ],
+        "description": "Aprender uma nova linguagem de programação ou idioma falado.\n\nIdeias:\n- Rust\n- Go\n- Japonês"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "Bem-vindo às Notas",
+        "content": "# Bem-vindo às Notas\n\nAs notas são perfeitas para documentação, ideias e conteúdo mais longo.\n\n## Recursos\n\n- **Estrutura hierárquica** - Crie subnotas aninhadas\n- **Suporte a Markdown** - Formatação completa\n- **Referências cruzadas** - Vincule a tarefas com `[[T1]]`\n- **Arrastar e soltar** - Reorganize suas notas\n\n## Começando\n\nClique no botão **+** para criar novas notas. Use a barra lateral para navegar."
+      },
+      "2": {
+        "title": "Ideias de projeto",
+        "content": "# Ideias de projeto\n\nUm lugar para brainstorming e coleta de ideias.\n\n## Recursos para construir\n- [ ] Modo escuro\n- [ ] Exportar para PDF\n- [ ] Aplicativo móvel\n\n## Pesquisa\n- Verificar recursos dos concorrentes\n- Temas de feedback dos usuários\n\n---\n*Adicione suas próprias ideias aqui!*"
+      },
+      "3": {
+        "title": "Referência rápida",
+        "content": "# Referência rápida\n\n## Atalhos de teclado\n- `Esc` - Fechar diálogos\n- `Ctrl+Enter` - Salvar nota/comentário\n\n## Referências cruzadas\n- `[[T5]]` → Link para tarefa 5\n- `[[N2]]` → Link para nota 2\n\n## Imagens\nCole imagens diretamente com `Ctrl+V`"
+      }
+    }
+  }
+}

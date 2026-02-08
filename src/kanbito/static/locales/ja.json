@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "Kanbitoへようこそ！",
+    "whatWillYouUse": "Kanbitoをどのように使いますか？",
+    "both": "両方",
+    "bothDesc": "タスクボード + ノート",
+    "boardOnly": "ボードのみ",
+    "boardOnlyDesc": "カンバンタスク管理",
+    "notesOnly": "ノートのみ",
+    "notesOnlyDesc": "マークダウンドキュメント",
+    "almostReady": "もうすぐ準備完了！",
+    "setupPrefs": "設定を行いましょう",
+    "yourName": "お名前",
+    "yourNamePlaceholder": "名前を入力",
+    "back": "戻る",
+    "getStarted": "始める",
+    "changeInSettings": "後で設定から変更できます",
+    "cloneSuccess": "リポジトリが正常にクローンされました！",
+    "connectVia": "接続方法",
+    "dataFolder": "データフォルダ",
+    "dataFolderHint": "タスクとメモが保存される場所",
+    "folderNotEmpty": "選択したフォルダは空ではありません。クリアして新しく始めますか？",
+    "folderNotEmptyClone": "フォルダがクリアされ、リポジトリがクローンされます。続行しますか？",
+    "gitRepo": "GitHubと同期（オプション）",
+    "gitRepoHint": "既存のKanbitoリポジトリをクローンしてデバイス間で同期",
+    "gitRepoPlaceholder": "user/repo（SSH使用）または完全なURL",
+    "noIdentities": "GitHub IDが見つかりません - 先に 'gh auth login' を実行してください"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "ボード",
+    "notes": "ノート"
+  },
+  "user": {
+    "change": "ユーザー名を変更:",
+    "anonymous": "匿名"
+  },
+  "save": {
+    "saving": "保存中...",
+    "saved": "保存済み",
+    "error": "保存エラー"
+  },
+  "git": {
+    "sync": "同期",
+    "syncing": "同期中...",
+    "noRepo": "リポジトリなし",
+    "upToDate": "✓",
+    "unsaved": "{{count}}件未保存",
+    "available": "↓ {{count}}件利用可能",
+    "syncNeeded": "↕ 同期が必要",
+    "syncFailed": "同期失敗"
+  },
+  "conflict": {
+    "title": "同期の競合",
+    "description": "あなたの変更とクラウドの変更が重複しています。どうしますか？",
+    "keepLocal": "自分の変更を保持",
+    "keepLocalDesc": "あなたのバージョンをクラウドにアップロード",
+    "keepCloud": "クラウドを保持",
+    "keepCloudDesc": "あなたの変更を破棄",
+    "keepCloudBackup": "クラウド + バックアップを保持",
+    "keepCloudBackupDesc": "クラウド版をダウンロード、変更は保存されます（元に戻すで復元可能）",
+    "decideLater": "後で決める",
+    "recommended": "推奨",
+    "confirmKeepLocal": "あなたのバージョンをクラウドにアップロードします。以前のクラウドバージョンはリポジトリ履歴から復元できます。",
+    "confirmKeepCloud": "あなたのバージョンをクラウドに置き換えます。ローカルの変更は失われ、復元できません。",
+    "confirmBtn": "はい、続行",
+    "showDiff": "差分を表示",
+    "hideDiff": "差分を非表示",
+    "myChanges": "あなたの編集",
+    "cloudChanges": "クラウドの編集",
+    "legendLocalDel": "以前",
+    "legendLocalAdd": "変更後",
+    "legendRemoteDel": "以前",
+    "legendRemoteAdd": "クラウドでの変更後"
+  },
+  "backup": {
+    "restore": "以前の状態に復元",
+    "confirmRestore": "以前の状態に復元しますか？現在のデータが置き換えられます。",
+    "confirmUndo": "最後の同期を元に戻しますか？以前のデータが復元されます。",
+    "restored": "復元に成功しました",
+    "restoreFailed": "復元に失敗しました",
+    "undo": "元に戻す"
+  },
+  "settings": {
+    "title": "設定",
+    "gitSync": "GitHub同期",
+    "repository": "GitHubリポジトリ",
+    "repositoryPlaceholder": "user/repo またはGitHub URLを貼り付け",
+    "connectVia": "接続方法",
+    "testConnection": "接続テスト",
+    "createRepo": "リポジトリを作成",
+    "openOnGitHub": "GitHubで開く",
+    "creating": "作成中...",
+    "testing": "テスト中...",
+    "connectionSuccess": "接続成功！",
+    "connectionFailed": "接続失敗",
+    "dataManagement": "データ管理",
+    "restoreExamples": "サンプルを復元",
+    "clearExamples": "サンプルをクリア",
+    "restoreHint": "<strong>サンプルを復元:</strong> 機能を探るためのサンプルタスクとノートを読み込む",
+    "clearHint": "<strong>サンプルをクリア:</strong> サンプルタスクとノートを削除して新しく始める",
+    "clearExamplesTitle": "サンプルデータをクリア",
+    "close": "閉じる",
+    "save": "保存",
+    "notConfigured": "未設定",
+    "username": "ユーザー名",
+    "usernameHint": "コメントと帰属に使用",
+    "usernamePlaceholder": "お名前",
+    "language": "言語",
+    "languageHint": "お好みの言語を選択",
+    "showSections": "セクションを表示",
+    "showSectionsHint": "少なくとも1つは有効にする必要があります"
+  },
+  "task": {
+    "new": "新規タスク",
+    "edit": "タスクを編集",
+    "title": "タイトル",
+    "titlePlaceholder": "タスクのタイトル",
+    "description": "説明（オプション、マークダウン対応）",
+    "descPlaceholder": "詳細、ユーザーストーリー、メモ...",
+    "tags": "タグ",
+    "tagsPlaceholder": "タグを入力してEnterまたはカンマを押す",
+    "pasteHint": "Ctrl+Vで画像を直接貼り付け",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "addTask": "+ タスクを追加",
+    "addSubtask": "サブタスクを追加",
+    "newSubtaskOf": "T{{id}}の新規サブタスク",
+    "subtasks": "サブタスク",
+    "subtasksCount": "{{count}}件のサブタスク",
+    "noSubtasks": "サブタスクなし",
+    "add": "+ 追加",
+    "noDescription": "説明なし",
+    "created": "作成日:",
+    "modified": "更新日:",
+    "backlog": "バックログ",
+    "restore": "復元",
+    "delete": "削除",
+    "edit_btn": "編集",
+    "close": "閉じる",
+    "taskNotFound": "タスクが見つかりません",
+    "subtaskOf": "親タスク:"
+  },
+  "columns": {
+    "todo": "To Do",
+    "doing": "進行中",
+    "review": "レビュー待ち",
+    "done": "完了"
+  },
+  "backlog": {
+    "title": "バックログ",
+    "restore": "To Doに復元",
+    "delete": "削除"
+  },
+  "trash": {
+    "title": "ゴミ箱",
+    "empty": "空にする",
+    "emptyConfirm": "ゴミ箱を空にしますか？{{count}}件のタスクが完全に削除されます。",
+    "permanentDelete": "完全に削除",
+    "permanentDeleteConfirm": "このタスクを完全に削除しますか？元に戻せません。"
+  },
+  "comments": {
+    "title": "コメント",
+    "titleCount": "コメント（{{count}}）",
+    "placeholder": "コメントを書く（マークダウン対応）...",
+    "send": "送信",
+    "deleteConfirm": "このコメントを削除しますか？"
+  },
+  "notes": {
+    "title": "ノート",
+    "new": "新規ノート",
+    "select": "ノートを選択",
+    "titlePlaceholder": "ノートのタイトル",
+    "contentPlaceholder": "マークダウンで内容を...",
+    "edit": "編集",
+    "addChild": "+ サブノート",
+    "delete": "削除",
+    "deleteConfirm": "このノートとすべてのサブノートを削除しますか？",
+    "noteNotFound": "ノートが見つかりません"
+  },
+  "confirm": {
+    "clearAllData": "すべてのタスク、ノート、画像を削除してもよろしいですか？\n\nこの操作は元に戻せません！",
+    "clearExamples": "サンプルのタスクとノートを削除しますか？\n\nあなたのコンテンツは保持されます。",
+    "restoreExamples": "現在のすべてのデータをサンプルのタスクとノートに置き換えます。\n\n続行しますか？",
+    "reloadExamples": "言語が変更されました。新しい言語でサンプルのタスクとノートを再読み込みしますか？\n\n現在のすべてのデータが置き換えられます。"
+  },
+  "prompt": {
+    "subtasksMove": "このタスクには{{count}}件のサブタスクがあります。\n\n入力してください:\n  \"all\" - タスクとサブタスクをバックログに移動\n  \"only\" - このタスクのみを移動（サブタスクは孤立）\n  \"cancel\" - 何もしない",
+    "subtasksDelete": "このタスクには{{count}}件のサブタスクがあります。\n\n入力してください:\n  \"all\" - タスクとサブタスクを削除\n  \"only\" - このタスクのみを削除（サブタスクは孤立）\n  \"cancel\" - 何もしない",
+    "subtasksRestore": "このタスクには{{location}}に{{count}}件のサブタスクがあります。\n\n入力してください:\n  \"all\" - タスクとサブタスクを復元\n  \"only\" - このタスクのみを復元\n  \"cancel\" - 何もしない",
+    "subtasksPermanent": "このタスクにはゴミ箱に{{count}}件のサブタスクがあります。\n\n入力してください:\n  \"all\" - タスクとサブタスクを完全に削除\n  \"only\" - このタスクのみを削除\n  \"cancel\" - 何もしない",
+    "defaultAll": "all",
+    "backlog": "バックログ",
+    "theTrash": "ゴミ箱"
+  },
+  "xref": {
+    "taskNotFound": "タスクが見つかりません",
+    "noteNotFound": "ノートが見つかりません"
+  },
+  "filter": {
+    "title": "タグでフィルター",
+    "active": "アクティブ",
+    "clear": "クリア",
+    "manageGroups": "タググループを管理",
+    "any": "いずれか",
+    "all": "すべて",
+    "noGroups": "タググループがありません。タグを整理するためにグループを作成してください。",
+    "groupName": "グループ名",
+    "addGroup": "グループを追加",
+    "untitledGroup": "無題",
+    "dropHere": "ここにタグをドロップ"
+  },
+  "readme": {
+    "title": "Kanbitoデータ",
+    "intro": "このリポジトリには[Kanbito](https://github.com/vfmatzkin/kanbito)のデータが含まれています。",
+    "filesTitle": "ファイル",
+    "filesBoard": "`board.json` - タスクメタデータ（列、タスクリスト、バックログ、ゴミ箱）",
+    "filesNotes": "`notes.json` - ノートメタデータ（ツリー構造）",
+    "filesTasks": "`tasks/` - マークダウンでのタスク説明（T1.md、T2.md、...）",
+    "filesNotesDir": "`notes/` - マークダウンでのノート内容（N1.md、N2.md、...）",
+    "filesImages": "`images/` - 添付画像",
+    "filesSettings": "`.kanbito.json` - アプリ設定（git同期設定、言語、ユーザー名）",
+    "restoreTitle": "以前のバージョンを復元",
+    "restoreIntro": "データを以前の状態に復元する必要がある場合:",
+    "option1Title": "オプション1: GitHub Webインターフェースを使用",
+    "option1Steps": "1. GitHubでリポジトリにアクセス\n2. 「Commits」をクリックして履歴を表示\n3. 復元したいコミットを見つける\n4. コミットハッシュをクリックし、「Browse files」をクリック\n5. 必要なファイルをダウンロード（board.json、notes.jsonなど）\n6. Kanbitoデータフォルダ内のファイルを置き換え",
+    "option2Title": "オプション2: Gitコマンドを使用",
+    "option2Code": "# コミット履歴を表示\ngit log --oneline\n\n# 特定のコミットに復元（COMMIT_HASHを置き換え）\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# または特定のコミットにすべて復元\ngit reset --hard COMMIT_HASH",
+    "option3Title": "オプション3: GitHubの「Restore」機能を使用",
+    "option3Steps": "1. GitHubでリポジトリにアクセス\n2. 「Commits」をクリック\n3. 不要な変更の前のコミットを見つける\n4. 「...」→「Revert changes in this commit」をクリック（新しいコミットが作成される）",
+    "note": "`.kanbito-backup/`フォルダ（存在する場合）はローカル専用で、GitHubには同期されません。"
+  },
+  "examples": {
+    "clearHint": "これらはサンプルタスクです。クリックして新しく始めましょう！",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "タイプ",
+        "tags": [
+          "バグ",
+          "アイデア"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "エリア",
+        "tags": [
+          "仕事",
+          "個人"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "いつ",
+        "tags": [
+          "今日",
+          "今週",
+          "いつか"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Kanbitoへようこそ！",
+        "tags": [
+          "ガイド"
+        ],
+        "comment": "これはマークダウン対応の**コメント**です！\n\n他のタスク[[T2]]やノート[[N1]]を参照できます。",
+        "description": "## Kanbitoへようこそ！\n\nこれはあなたの個人用**カンバンボード**です。できること：\n\n- タスクを列間で**ドラッグ＆ドロップ**\n- **タグを追加**してタスクを整理・フィルター\n- 説明とコメントで**マークダウンを使用**\n- `[[T2]]`でタスクを、`[[N1]]`でノートを**リンク**\n\n### これらの機能を試してください：\n1. **フィルターボタン**（右下）をクリックしてタグでフィルター\n2. タスクにカーソルを合わせて**+**をクリックしてサブタスクを追加\n3. **⚙️**をクリックしてGitHub同期を有効化\n\n[[T2]]でタグフィルタリングについて学びましょう！"
+      },
+      "2": {
+        "title": "タスクをフィルターしてみよう",
+        "tags": [
+          "ガイド",
+          "今日"
+        ],
+        "description": "## タグでフィルターする方法\n\nKanbitoでは**タググループ**を使ってタスクをフィルターできます。今すぐ試してみましょう：\n\n1. 右下の**フィルターボタン**をクリック\n2. 3つのサンプルグループが表示されます：\n   - **タイプ**: バグ、アイデア\n   - **エリア**: 仕事、個人\n   - **いつ**: 今日、今週、いつか\n\n### 仕組み：\n- タグをクリックしてボードをフィルター\n- 同じグループ内のタグは**OR**ロジック（いずれかに一致）\n- グループ間のタグは**AND**ロジック（すべてに一致が必要）\n\n### グループをカスタマイズ：\n「タググループを管理」をクリックして独自の整理システムを作成！\n\n> `仕事`でフィルターして仕事関連のタスクのみを表示してみてください。"
+      },
+      "3": {
+        "title": "ログインページの誤字を修正",
+        "tags": [
+          "バグ",
+          "仕事",
+          "今日"
+        ],
+        "description": "ログインページに修正が必要な誤字があります。\n\n**場所:** `src/pages/Login.tsx`\n\n- [ ] 誤字を見つける\n- [ ] 修正する\n- [ ] ページをテストする"
+      },
+      "4": {
+        "title": "ダークモード切り替えを追加",
+        "tags": [
+          "アイデア",
+          "仕事",
+          "今週"
+        ],
+        "description": "ユーザーからダークモードオプションのリクエストがありました。\n\n### 要件：\n- 設定でトグル\n- 設定を保持\n- システム設定の検出\n\n### メモ：\n[[N2]]で他のプロジェクトアイデアを確認してください。"
+      },
+      "5": {
+        "title": "週末旅行を計画",
+        "tags": [
+          "個人",
+          "今週"
+        ],
+        "description": "週末の小旅行を計画します。\n\n- [ ] 目的地を選ぶ\n- [ ] 宿泊を予約\n- [ ] アクティビティを計画"
+      },
+      "6": {
+        "title": "ドキュメントを更新",
+        "tags": [
+          "仕事"
+        ],
+        "description": "最新のAPI変更でドキュメントが更新されました。"
+      },
+      "7": {
+        "title": "新しい言語を学ぶ",
+        "tags": [
+          "個人",
+          "いつか"
+        ],
+        "description": "新しいプログラミング言語または話し言葉を習得します。\n\nアイデア：\n- Rust\n- Go\n- スペイン語"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "ノートへようこそ",
+        "content": "# ノートへようこそ\n\nノートはドキュメント、アイデア、長いコンテンツに最適です。\n\n## 機能\n\n- **階層構造** - ネストされたサブノートを作成\n- **マークダウン対応** - 完全なフォーマット\n- **クロスリファレンス** - `[[T1]]`でタスクにリンク\n- **ドラッグ＆ドロップ** - ノートを再編成\n\n## 始め方\n\n**+**ボタンをクリックして新しいノートを作成します。サイドバーを使ってナビゲートしてください。"
+      },
+      "2": {
+        "title": "プロジェクトアイデア",
+        "content": "# プロジェクトアイデア\n\nブレインストーミングとアイデア収集の場所。\n\n## 構築する機能\n- [ ] ダークモード\n- [ ] PDFエクスポート\n- [ ] モバイルアプリ\n\n## リサーチ\n- 競合機能を確認\n- ユーザーフィードバックのテーマ\n\n---\n*ここに独自のアイデアを追加してください！*"
+      },
+      "3": {
+        "title": "クイックリファレンス",
+        "content": "# クイックリファレンス\n\n## キーボードショートカット\n- `Esc` - ダイアログを閉じる\n- `Ctrl+Enter` - ノート/コメントを保存\n\n## クロスリファレンス\n- `[[T5]]` → タスク5にリンク\n- `[[N2]]` → ノート2にリンク\n\n## 画像\n`Ctrl+V`で画像を直接貼り付け"
+      }
+    }
+  }
+}

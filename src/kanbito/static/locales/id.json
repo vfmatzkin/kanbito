@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "Selamat datang di Kanbito!",
+    "whatWillYouUse": "Untuk apa Anda akan menggunakan Kanbito?",
+    "both": "Keduanya",
+    "bothDesc": "Papan tugas + Catatan",
+    "boardOnly": "Hanya papan",
+    "boardOnlyDesc": "Manajemen tugas Kanban",
+    "notesOnly": "Hanya catatan",
+    "notesOnlyDesc": "Dokumentasi Markdown",
+    "almostReady": "Hampir siap!",
+    "setupPrefs": "Atur preferensi Anda",
+    "yourName": "Nama Anda",
+    "yourNamePlaceholder": "Masukkan nama Anda",
+    "back": "Kembali",
+    "getStarted": "Mulai",
+    "changeInSettings": "Anda dapat mengubah ini nanti di Pengaturan",
+    "cloneSuccess": "Repositori berhasil dikloning!",
+    "connectVia": "Hubungkan melalui",
+    "dataFolder": "Folder data",
+    "dataFolderHint": "Tempat tugas dan catatan Anda disimpan",
+    "folderNotEmpty": "Folder yang dipilih tidak kosong. Apakah Anda ingin mengosongkannya dan memulai dari awal?",
+    "folderNotEmptyClone": "Folder akan dikosongkan dan repositori akan dikloning. Lanjutkan?",
+    "gitRepo": "Sinkronkan dengan GitHub (opsional)",
+    "gitRepoHint": "Kloning repo Kanbito yang ada untuk sinkronisasi antar perangkat",
+    "gitRepoPlaceholder": "user/repo (menggunakan SSH) atau URL lengkap",
+    "noIdentities": "Tidak ada identitas GitHub ditemukan - jalankan 'gh auth login' terlebih dahulu"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "Papan",
+    "notes": "Catatan"
+  },
+  "user": {
+    "change": "Ubah nama pengguna:",
+    "anonymous": "Anonim"
+  },
+  "save": {
+    "saving": "Menyimpan...",
+    "saved": "Tersimpan",
+    "error": "Gagal menyimpan"
+  },
+  "git": {
+    "sync": "Sinkronisasi",
+    "syncing": "Menyinkronkan...",
+    "noRepo": "Tidak ada repo",
+    "upToDate": "✓",
+    "unsaved": "{{count}} belum disimpan",
+    "available": "↓ {{count}} tersedia",
+    "syncNeeded": "↕ Perlu sinkronisasi",
+    "syncFailed": "Sinkronisasi gagal"
+  },
+  "conflict": {
+    "title": "Konflik Sinkronisasi",
+    "description": "Perubahan Anda dan perubahan cloud tumpang tindih. Apa yang ingin Anda lakukan?",
+    "keepLocal": "Simpan milik Anda",
+    "keepLocalDesc": "Unggah versi Anda ke cloud",
+    "keepCloud": "Simpan cloud",
+    "keepCloudDesc": "Buang perubahan Anda",
+    "keepCloudBackup": "Simpan cloud + cadangan",
+    "keepCloudBackupDesc": "Unduh versi cloud, perubahan Anda disimpan (gunakan Batalkan untuk memulihkan)",
+    "decideLater": "Putuskan nanti",
+    "recommended": "Disarankan",
+    "confirmKeepLocal": "Ini akan mengunggah versi Anda ke cloud. Versi cloud sebelumnya masih dapat dipulihkan dari riwayat repositori.",
+    "confirmKeepCloud": "Ini akan mengganti versi Anda dengan cloud. Perubahan lokal Anda akan hilang dan tidak dapat dipulihkan.",
+    "confirmBtn": "Ya, lanjutkan",
+    "showDiff": "Tampilkan perbedaan",
+    "hideDiff": "Sembunyikan perbedaan",
+    "myChanges": "Editan Anda",
+    "cloudChanges": "Editan cloud",
+    "legendLocalDel": "Sebelumnya",
+    "legendLocalAdd": "Anda ubah menjadi",
+    "legendRemoteDel": "Sebelumnya",
+    "legendRemoteAdd": "Diubah di cloud menjadi"
+  },
+  "backup": {
+    "restore": "Pulihkan keadaan sebelumnya",
+    "confirmRestore": "Pulihkan ke keadaan sebelumnya? Ini akan mengganti data Anda saat ini.",
+    "confirmUndo": "Batalkan sinkronisasi terakhir? Ini akan memulihkan data sebelumnya.",
+    "restored": "Berhasil dipulihkan",
+    "restoreFailed": "Gagal memulihkan",
+    "undo": "Batalkan"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "gitSync": "Sinkronisasi GitHub",
+    "repository": "Repositori GitHub",
+    "repositoryPlaceholder": "user/repo atau tempel URL GitHub",
+    "connectVia": "Hubungkan via",
+    "testConnection": "Tes Koneksi",
+    "createRepo": "Buat Repositori",
+    "openOnGitHub": "Buka di GitHub",
+    "creating": "Membuat...",
+    "testing": "Menguji...",
+    "connectionSuccess": "Koneksi berhasil!",
+    "connectionFailed": "Koneksi gagal",
+    "dataManagement": "Manajemen Data",
+    "restoreExamples": "Pulihkan Contoh",
+    "clearExamples": "Hapus Contoh",
+    "restoreHint": "<strong>Pulihkan Contoh:</strong> Muat contoh tugas dan catatan untuk menjelajahi fitur",
+    "clearHint": "<strong>Hapus Contoh:</strong> Hapus contoh tugas dan catatan untuk memulai dari awal",
+    "clearExamplesTitle": "Hapus data contoh",
+    "close": "Tutup",
+    "save": "Simpan",
+    "notConfigured": "Belum dikonfigurasi",
+    "username": "Nama Pengguna",
+    "usernameHint": "Digunakan untuk komentar dan atribusi",
+    "usernamePlaceholder": "Nama Anda",
+    "language": "Bahasa",
+    "languageHint": "Pilih bahasa yang Anda inginkan",
+    "showSections": "Tampilkan bagian",
+    "showSectionsHint": "Setidaknya satu harus diaktifkan"
+  },
+  "task": {
+    "new": "Tugas baru",
+    "edit": "Edit tugas",
+    "title": "Judul",
+    "titlePlaceholder": "Judul tugas",
+    "description": "Deskripsi (opsional, mendukung Markdown)",
+    "descPlaceholder": "Detail, cerita pengguna, catatan...",
+    "tags": "Tag",
+    "tagsPlaceholder": "Ketik tag dan tekan Enter atau koma",
+    "pasteHint": "Tempel gambar langsung dengan Ctrl+V",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "addTask": "+ Tambah tugas",
+    "addSubtask": "Tambah subtugas",
+    "newSubtaskOf": "Subtugas baru dari T{{id}}",
+    "subtasks": "Subtugas",
+    "subtasksCount": "{{count}} subtugas",
+    "noSubtasks": "Tidak ada subtugas",
+    "add": "+ Tambah",
+    "noDescription": "Tidak ada deskripsi",
+    "created": "Dibuat:",
+    "modified": "Diubah:",
+    "backlog": "Backlog",
+    "restore": "Pulihkan",
+    "delete": "Hapus",
+    "edit_btn": "Edit",
+    "close": "Tutup",
+    "taskNotFound": "Tugas tidak ditemukan",
+    "subtaskOf": "Subtugas dari:"
+  },
+  "columns": {
+    "todo": "Akan Dikerjakan",
+    "doing": "Sedang Dikerjakan",
+    "review": "Menunggu Review",
+    "done": "Selesai"
+  },
+  "backlog": {
+    "title": "Backlog",
+    "restore": "Pulihkan ke Akan Dikerjakan",
+    "delete": "Hapus"
+  },
+  "trash": {
+    "title": "Sampah",
+    "empty": "Kosongkan",
+    "emptyConfirm": "Kosongkan sampah? {{count}} tugas akan dihapus permanen.",
+    "permanentDelete": "Hapus permanen",
+    "permanentDeleteConfirm": "Hapus tugas ini permanen? Ini tidak dapat dibatalkan."
+  },
+  "comments": {
+    "title": "Komentar",
+    "titleCount": "Komentar ({{count}})",
+    "placeholder": "Tulis komentar (mendukung Markdown)...",
+    "send": "Kirim",
+    "deleteConfirm": "Hapus komentar ini?"
+  },
+  "notes": {
+    "title": "Catatan",
+    "new": "Catatan baru",
+    "select": "Pilih catatan",
+    "titlePlaceholder": "Judul catatan",
+    "contentPlaceholder": "Konten dalam Markdown...",
+    "edit": "Edit",
+    "addChild": "+ Sub-catatan",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus catatan ini dan semua sub-catatannya?",
+    "noteNotFound": "Catatan tidak ditemukan"
+  },
+  "confirm": {
+    "clearAllData": "Apakah Anda yakin ingin menghapus SEMUA tugas, catatan, dan gambar?\n\nIni tidak dapat dibatalkan!",
+    "clearExamples": "Hapus contoh tugas dan catatan?\n\nKonten Anda akan tetap disimpan.",
+    "restoreExamples": "Ini akan mengganti semua data saat ini dengan contoh tugas dan catatan.\n\nLanjutkan?",
+    "reloadExamples": "Bahasa diubah. Apakah Anda ingin memuat ulang contoh tugas dan catatan dalam bahasa baru?\n\nIni akan mengganti semua data saat ini."
+  },
+  "prompt": {
+    "subtasksMove": "Tugas ini memiliki {{count}} subtugas.\n\nKetik:\n  \"all\" - pindahkan tugas dan subtugas ke backlog\n  \"only\" - pindahkan hanya tugas ini (subtugas menjadi yatim)\n  \"cancel\" - tidak melakukan apa-apa",
+    "subtasksDelete": "Tugas ini memiliki {{count}} subtugas.\n\nKetik:\n  \"all\" - hapus tugas dan subtugas\n  \"only\" - hapus hanya tugas ini (subtugas menjadi yatim)\n  \"cancel\" - tidak melakukan apa-apa",
+    "subtasksRestore": "Tugas ini memiliki {{count}} subtugas di {{location}}.\n\nKetik:\n  \"all\" - pulihkan tugas dan subtugas\n  \"only\" - pulihkan hanya tugas ini\n  \"cancel\" - tidak melakukan apa-apa",
+    "subtasksPermanent": "Tugas ini memiliki {{count}} subtugas di sampah.\n\nKetik:\n  \"all\" - hapus permanen tugas dan subtugas\n  \"only\" - hapus hanya tugas ini\n  \"cancel\" - tidak melakukan apa-apa",
+    "defaultAll": "all",
+    "backlog": "backlog",
+    "theTrash": "sampah"
+  },
+  "xref": {
+    "taskNotFound": "Tugas tidak ditemukan",
+    "noteNotFound": "Catatan tidak ditemukan"
+  },
+  "filter": {
+    "title": "Filter berdasarkan tag",
+    "active": "aktif",
+    "clear": "Hapus",
+    "manageGroups": "Kelola grup tag",
+    "any": "Salah satu",
+    "all": "Semua",
+    "noGroups": "Belum ada grup tag. Buat satu untuk mengatur tag Anda.",
+    "groupName": "Nama grup",
+    "addGroup": "Tambah Grup",
+    "untitledGroup": "Tanpa judul",
+    "dropHere": "Letakkan tag di sini"
+  },
+  "readme": {
+    "title": "Data Kanbito",
+    "intro": "Repositori ini berisi data dari [Kanbito](https://github.com/vfmatzkin/kanbito).",
+    "filesTitle": "File",
+    "filesBoard": "`board.json` - Metadata tugas (kolom, daftar tugas, backlog, sampah)",
+    "filesNotes": "`notes.json` - Metadata catatan (struktur pohon)",
+    "filesTasks": "`tasks/` - Deskripsi tugas dalam Markdown (T1.md, T2.md, ...)",
+    "filesNotesDir": "`notes/` - Konten catatan dalam Markdown (N1.md, N2.md, ...)",
+    "filesImages": "`images/` - Gambar terlampir",
+    "filesSettings": "`.kanbito.json` - Pengaturan aplikasi (konfigurasi git sync, bahasa, nama pengguna)",
+    "restoreTitle": "Memulihkan Versi Sebelumnya",
+    "restoreIntro": "Jika Anda perlu memulihkan data ke keadaan sebelumnya:",
+    "option1Title": "Opsi 1: Menggunakan Antarmuka Web GitHub",
+    "option1Steps": "1. Buka repositori Anda di GitHub\n2. Klik \"Commits\" untuk melihat riwayat\n3. Temukan commit yang ingin Anda pulihkan\n4. Klik hash commit, lalu klik \"Browse files\"\n5. Unduh file yang Anda butuhkan (board.json, notes.json, dll.)\n6. Ganti file di folder data Kanbito Anda",
+    "option2Title": "Opsi 2: Menggunakan Perintah Git",
+    "option2Code": "# Lihat riwayat commit\ngit log --oneline\n\n# Pulihkan ke commit tertentu (ganti COMMIT_HASH)\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# Atau pulihkan semuanya ke commit tertentu\ngit reset --hard COMMIT_HASH",
+    "option3Title": "Opsi 3: Menggunakan Fitur \"Restore\" GitHub",
+    "option3Steps": "1. Buka repositori Anda di GitHub\n2. Klik \"Commits\"\n3. Temukan commit sebelum perubahan yang tidak diinginkan\n4. Klik \"...\" → \"Revert changes in this commit\" (membuat commit baru)",
+    "note": "Folder `.kanbito-backup/` (jika ada) hanya lokal dan tidak disinkronkan ke GitHub."
+  },
+  "examples": {
+    "clearHint": "Ini adalah contoh tugas. Klik untuk memulai dari awal!",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "Tipe",
+        "tags": [
+          "bug",
+          "ide"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "Area",
+        "tags": [
+          "kerja",
+          "pribadi"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "Kapan",
+        "tags": [
+          "hari-ini",
+          "minggu-ini",
+          "suatu-saat"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Selamat datang di Kanbito!",
+        "tags": [
+          "panduan"
+        ],
+        "comment": "Ini adalah **komentar** dengan dukungan Markdown!\n\nAnda dapat mereferensi tugas lain seperti [[T2]] atau catatan seperti [[N1]].",
+        "description": "## Selamat datang di Kanbito!\n\nIni adalah **papan Kanban** pribadi Anda. Inilah yang dapat Anda lakukan:\n\n- **Seret & lepas** tugas antar kolom\n- **Tambah tag** untuk mengatur dan memfilter tugas\n- **Gunakan Markdown** dalam deskripsi dan komentar\n- **Hubungkan tugas** dengan `[[T2]]` atau catatan dengan `[[N1]]`\n\n### Coba fitur ini:\n1. Klik **tombol filter** (kanan bawah) untuk filter berdasarkan tag\n2. Arahkan kursor ke tugas dan klik **+** untuk menambah subtugas\n3. Klik **⚙️** untuk mengaktifkan sinkronisasi GitHub\n\nLihat [[T2]] untuk mempelajari tentang filter tag!"
+      },
+      "2": {
+        "title": "Coba filter tugas Anda",
+        "tags": [
+          "panduan",
+          "hari-ini"
+        ],
+        "description": "## Pelajari cara filter berdasarkan tag\n\nKanbito memungkinkan Anda memfilter tugas menggunakan **grup tag**. Coba sekarang:\n\n1. Klik **tombol filter** di pojok kanan bawah\n2. Anda akan melihat 3 grup contoh:\n   - **Tipe**: bug, ide\n   - **Area**: kerja, pribadi\n   - **Kapan**: hari-ini, minggu-ini, suatu-saat\n\n### Cara kerjanya:\n- Klik tag untuk memfilter papan\n- Tag dalam grup yang sama menggunakan logika **ATAU** (tampilkan yang cocok)\n- Tag antar grup menggunakan logika **DAN** (harus cocok semua)\n\n### Sesuaikan grup Anda:\nKlik \"Kelola grup tag\" untuk membuat sistem organisasi Anda sendiri!\n\n> Coba filter dengan `kerja` untuk melihat hanya tugas terkait kerja."
+      },
+      "3": {
+        "title": "Perbaiki typo halaman login",
+        "tags": [
+          "bug",
+          "kerja",
+          "hari-ini"
+        ],
+        "description": "Ada typo di halaman login yang perlu diperbaiki.\n\n**Lokasi:** `src/pages/Login.tsx`\n\n- [ ] Temukan typo\n- [ ] Perbaiki\n- [ ] Tes halaman"
+      },
+      "4": {
+        "title": "Tambah toggle mode gelap",
+        "tags": [
+          "ide",
+          "kerja",
+          "minggu-ini"
+        ],
+        "description": "Pengguna meminta opsi mode gelap.\n\n### Persyaratan:\n- Toggle di pengaturan\n- Simpan preferensi\n- Deteksi preferensi sistem\n\n### Catatan:\nLihat [[N2]] untuk ide proyek lainnya."
+      },
+      "5": {
+        "title": "Rencanakan perjalanan akhir pekan",
+        "tags": [
+          "pribadi",
+          "minggu-ini"
+        ],
+        "description": "Rencanakan liburan akhir pekan.\n\n- [ ] Pilih tujuan\n- [ ] Pesan akomodasi\n- [ ] Rencanakan aktivitas"
+      },
+      "6": {
+        "title": "Perbarui dokumentasi",
+        "tags": [
+          "kerja"
+        ],
+        "description": "Dokumentasi telah diperbarui dengan perubahan API terbaru."
+      },
+      "7": {
+        "title": "Pelajari bahasa baru",
+        "tags": [
+          "pribadi",
+          "suatu-saat"
+        ],
+        "description": "Pelajari bahasa pemrograman atau bahasa asing baru.\n\nIde:\n- Rust\n- Go\n- Jepang"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "Selamat datang di Catatan",
+        "content": "# Selamat datang di Catatan\n\nCatatan sempurna untuk dokumentasi, ide, dan konten panjang.\n\n## Fitur\n\n- **Struktur hierarki** - Buat sub-catatan bersarang\n- **Dukungan Markdown** - Pemformatan lengkap\n- **Referensi silang** - Hubungkan ke tugas dengan `[[T1]]`\n- **Seret & lepas** - Atur ulang catatan Anda\n\n## Memulai\n\nKlik tombol **+** untuk membuat catatan baru. Gunakan sidebar untuk navigasi."
+      },
+      "2": {
+        "title": "Ide Proyek",
+        "content": "# Ide Proyek\n\nTempat untuk brainstorm dan mengumpulkan ide.\n\n## Fitur yang akan dibangun\n- [ ] Mode gelap\n- [ ] Ekspor ke PDF\n- [ ] Aplikasi mobile\n\n## Riset\n- Periksa fitur kompetitor\n- Tema umpan balik pengguna\n\n---\n*Tambahkan ide Anda sendiri di sini!*"
+      },
+      "3": {
+        "title": "Referensi Cepat",
+        "content": "# Referensi Cepat\n\n## Pintasan keyboard\n- `Esc` - Tutup dialog\n- `Ctrl+Enter` - Simpan catatan/komentar\n\n## Referensi silang\n- `[[T5]]` → Hubungkan ke tugas 5\n- `[[N2]]` → Hubungkan ke catatan 2\n\n## Gambar\nTempel gambar langsung dengan `Ctrl+V`"
+      }
+    }
+  }
+}
