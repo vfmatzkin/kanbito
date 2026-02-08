@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "Kanbito'ya Hoş Geldiniz!",
+    "whatWillYouUse": "Kanbito'yu ne için kullanacaksınız?",
+    "both": "Her İkisi",
+    "bothDesc": "Görev panosu + Notlar",
+    "boardOnly": "Sadece pano",
+    "boardOnlyDesc": "Kanban görev yönetimi",
+    "notesOnly": "Sadece notlar",
+    "notesOnlyDesc": "Markdown dokümantasyonu",
+    "almostReady": "Neredeyse hazır!",
+    "setupPrefs": "Tercihlerinizi ayarlayın",
+    "yourName": "Adınız",
+    "yourNamePlaceholder": "Adınızı girin",
+    "back": "Geri",
+    "getStarted": "Başla",
+    "changeInSettings": "Bunu daha sonra Ayarlar'dan değiştirebilirsiniz",
+    "cloneSuccess": "Depo başarıyla klonlandı!",
+    "connectVia": "Şununla bağlan",
+    "dataFolder": "Veri klasörü",
+    "dataFolderHint": "Görevlerinizin ve notlarınızın kaydedildiği yer",
+    "folderNotEmpty": "Seçilen klasör boş değil. Temizleyip sıfırdan başlamak ister misiniz?",
+    "folderNotEmptyClone": "Klasör temizlenecek ve depo klonlanacak. Devam edilsin mi?",
+    "gitRepo": "GitHub ile senkronize et (isteğe bağlı)",
+    "gitRepoHint": "Cihazlar arası senkronizasyon için mevcut bir Kanbito deposunu klonlayın",
+    "gitRepoPlaceholder": "user/repo (SSH kullanır) veya tam URL",
+    "noIdentities": "GitHub kimliği bulunamadı - önce 'gh auth login' çalıştırın"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "Pano",
+    "notes": "Notlar"
+  },
+  "user": {
+    "change": "Kullanıcı adını değiştir:",
+    "anonymous": "Anonim"
+  },
+  "save": {
+    "saving": "Kaydediliyor...",
+    "saved": "Kaydedildi",
+    "error": "Kaydetme hatası"
+  },
+  "git": {
+    "sync": "Senkronize Et",
+    "syncing": "Senkronize ediliyor...",
+    "noRepo": "Repo yok",
+    "upToDate": "✓",
+    "unsaved": "{{count}} kaydedilmedi",
+    "available": "↓ {{count}} mevcut",
+    "syncNeeded": "↕ Senkronizasyon gerekli",
+    "syncFailed": "Senkronizasyon başarısız"
+  },
+  "conflict": {
+    "title": "Senkronizasyon Çakışması",
+    "description": "Değişiklikleriniz ve bulut değişiklikleri çakışıyor. Ne yapmak istersiniz?",
+    "keepLocal": "Sizinkini koru",
+    "keepLocalDesc": "Sürümünüzü buluta yükle",
+    "keepCloud": "Bulutu koru",
+    "keepCloudDesc": "Değişikliklerinizi at",
+    "keepCloudBackup": "Bulut + yedek koru",
+    "keepCloudBackupDesc": "Bulut sürümünü indir, değişiklikleriniz kaydedildi (Geri Al ile geri yükle)",
+    "decideLater": "Sonra karar ver",
+    "recommended": "Önerilen",
+    "confirmKeepLocal": "Bu, sürümünüzü buluta yükleyecek. Önceki bulut sürümü hala depo geçmişinden kurtarılabilir.",
+    "confirmKeepCloud": "Bu, sürümünüzü bulutla değiştirecek. Yerel değişiklikleriniz kaybolacak ve kurtarılamaz.",
+    "confirmBtn": "Evet, devam et",
+    "showDiff": "Farkları göster",
+    "hideDiff": "Farkları gizle",
+    "myChanges": "Düzenlemeleriniz",
+    "cloudChanges": "Bulut düzenlemeleri",
+    "legendLocalDel": "Önceki",
+    "legendLocalAdd": "Şuna değiştirdiniz",
+    "legendRemoteDel": "Önceki",
+    "legendRemoteAdd": "Bulutta şuna değişti"
+  },
+  "backup": {
+    "restore": "Önceki duruma geri yükle",
+    "confirmRestore": "Önceki duruma geri yüklensin mi? Bu, mevcut verilerinizi değiştirecek.",
+    "confirmUndo": "Son senkronizasyon geri alınsın mı? Bu, önceki verilerinizi geri yükleyecek.",
+    "restored": "Başarıyla geri yüklendi",
+    "restoreFailed": "Geri yükleme başarısız",
+    "undo": "Geri Al"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "gitSync": "GitHub Senkronizasyonu",
+    "repository": "GitHub Deposu",
+    "repositoryPlaceholder": "kullanıcı/repo veya GitHub URL'si yapıştırın",
+    "connectVia": "Bağlantı yöntemi",
+    "testConnection": "Bağlantıyı Test Et",
+    "createRepo": "Depo Oluştur",
+    "openOnGitHub": "GitHub'da Aç",
+    "creating": "Oluşturuluyor...",
+    "testing": "Test ediliyor...",
+    "connectionSuccess": "Bağlantı başarılı!",
+    "connectionFailed": "Bağlantı başarısız",
+    "dataManagement": "Veri Yönetimi",
+    "restoreExamples": "Örnekleri Geri Yükle",
+    "clearExamples": "Örnekleri Temizle",
+    "restoreHint": "<strong>Örnekleri Geri Yükle:</strong> Özellikleri keşfetmek için örnek görevler ve notlar yükle",
+    "clearHint": "<strong>Örnekleri Temizle:</strong> Sıfırdan başlamak için örnek görevleri ve notları kaldır",
+    "clearExamplesTitle": "Örnek verileri temizle",
+    "close": "Kapat",
+    "save": "Kaydet",
+    "notConfigured": "Yapılandırılmadı",
+    "username": "Kullanıcı Adı",
+    "usernameHint": "Yorumlar ve atıflar için kullanılır",
+    "usernamePlaceholder": "Adınız",
+    "language": "Dil",
+    "languageHint": "Tercih ettiğiniz dili seçin",
+    "showSections": "Bölümleri göster",
+    "showSectionsHint": "En az biri etkin olmalıdır"
+  },
+  "task": {
+    "new": "Yeni görev",
+    "edit": "Görevi düzenle",
+    "title": "Başlık",
+    "titlePlaceholder": "Görev başlığı",
+    "description": "Açıklama (isteğe bağlı, Markdown destekler)",
+    "descPlaceholder": "Detaylar, kullanıcı hikayesi, notlar...",
+    "tags": "Etiketler",
+    "tagsPlaceholder": "Etiket yazın ve Enter veya virgül tuşuna basın",
+    "pasteHint": "Ctrl+V ile doğrudan resim yapıştırın",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "addTask": "+ Görev ekle",
+    "addSubtask": "Alt görev ekle",
+    "newSubtaskOf": "T{{id}}'nin yeni alt görevi",
+    "subtasks": "Alt görevler",
+    "subtasksCount": "{{count}} alt görev",
+    "noSubtasks": "Alt görev yok",
+    "add": "+ Ekle",
+    "noDescription": "Açıklama yok",
+    "created": "Oluşturuldu:",
+    "modified": "Değiştirildi:",
+    "backlog": "Backlog",
+    "restore": "Geri Yükle",
+    "delete": "Sil",
+    "edit_btn": "Düzenle",
+    "close": "Kapat",
+    "taskNotFound": "Görev bulunamadı",
+    "subtaskOf": "Alt görevi:"
+  },
+  "columns": {
+    "todo": "Yapılacak",
+    "doing": "Devam Ediyor",
+    "review": "İnceleme Bekliyor",
+    "done": "Tamamlandı"
+  },
+  "backlog": {
+    "title": "Backlog",
+    "restore": "Yapılacak'a Geri Yükle",
+    "delete": "Sil"
+  },
+  "trash": {
+    "title": "Çöp Kutusu",
+    "empty": "Boşalt",
+    "emptyConfirm": "Çöp kutusu boşaltılsın mı? {{count}} görev kalıcı olarak silinecek.",
+    "permanentDelete": "Kalıcı olarak sil",
+    "permanentDeleteConfirm": "Bu görev kalıcı olarak silinsin mi? Bu geri alınamaz."
+  },
+  "comments": {
+    "title": "Yorumlar",
+    "titleCount": "Yorumlar ({{count}})",
+    "placeholder": "Yorum yaz (Markdown destekler)...",
+    "send": "Gönder",
+    "deleteConfirm": "Bu yorum silinsin mi?"
+  },
+  "notes": {
+    "title": "Notlar",
+    "new": "Yeni not",
+    "select": "Bir not seçin",
+    "titlePlaceholder": "Not başlığı",
+    "contentPlaceholder": "Markdown ile içerik...",
+    "edit": "Düzenle",
+    "addChild": "+ Alt not",
+    "delete": "Sil",
+    "deleteConfirm": "Bu not ve tüm alt notları silinsin mi?",
+    "noteNotFound": "Not bulunamadı"
+  },
+  "confirm": {
+    "clearAllData": "TÜM görevleri, notları ve resimleri silmek istediğinizden emin misiniz?\n\nBu geri alınamaz!",
+    "clearExamples": "Örnek görevler ve notlar kaldırılsın mı?\n\nKendi içeriğiniz korunacak.",
+    "restoreExamples": "Bu, tüm mevcut verileri örnek görevler ve notlarla değiştirecek.\n\nDevam edilsin mi?",
+    "reloadExamples": "Dil değiştirildi. Örnek görevler ve notlar yeni dilde yeniden yüklensin mi?\n\nTüm mevcut veriler değiştirilecek."
+  },
+  "prompt": {
+    "subtasksMove": "Bu görevin {{count}} alt görevi var.\n\nYazın:\n  \"all\" - görevi ve alt görevleri backlog'a taşı\n  \"only\" - sadece bu görevi taşı (alt görevler yetim kalır)\n  \"cancel\" - hiçbir şey yapma",
+    "subtasksDelete": "Bu görevin {{count}} alt görevi var.\n\nYazın:\n  \"all\" - görevi ve alt görevleri sil\n  \"only\" - sadece bu görevi sil (alt görevler yetim kalır)\n  \"cancel\" - hiçbir şey yapma",
+    "subtasksRestore": "Bu görevin {{location}}'da {{count}} alt görevi var.\n\nYazın:\n  \"all\" - görevi ve alt görevleri geri yükle\n  \"only\" - sadece bu görevi geri yükle\n  \"cancel\" - hiçbir şey yapma",
+    "subtasksPermanent": "Bu görevin çöp kutusunda {{count}} alt görevi var.\n\nYazın:\n  \"all\" - görevi ve alt görevleri kalıcı olarak sil\n  \"only\" - sadece bu görevi sil\n  \"cancel\" - hiçbir şey yapma",
+    "defaultAll": "all",
+    "backlog": "backlog",
+    "theTrash": "çöp kutusu"
+  },
+  "xref": {
+    "taskNotFound": "Görev bulunamadı",
+    "noteNotFound": "Not bulunamadı"
+  },
+  "filter": {
+    "title": "Etiketlere göre filtrele",
+    "active": "aktif",
+    "clear": "Temizle",
+    "manageGroups": "Etiket gruplarını yönet",
+    "any": "Herhangi",
+    "all": "Tümü",
+    "noGroups": "Henüz etiket grubu yok. Etiketlerinizi düzenlemek için bir tane oluşturun.",
+    "groupName": "Grup adı",
+    "addGroup": "Grup Ekle",
+    "untitledGroup": "Başlıksız",
+    "dropHere": "Etiketleri buraya bırakın"
+  },
+  "readme": {
+    "title": "Kanbito Verileri",
+    "intro": "Bu depo [Kanbito](https://github.com/vfmatzkin/kanbito)'dan verileri içerir.",
+    "filesTitle": "Dosyalar",
+    "filesBoard": "`board.json` - Görev meta verileri (sütunlar, görev listesi, backlog, çöp kutusu)",
+    "filesNotes": "`notes.json` - Not meta verileri (ağaç yapısı)",
+    "filesTasks": "`tasks/` - Markdown'da görev açıklamaları (T1.md, T2.md, ...)",
+    "filesNotesDir": "`notes/` - Markdown'da not içerikleri (N1.md, N2.md, ...)",
+    "filesImages": "`images/` - Eklenmiş resimler",
+    "filesSettings": "`.kanbito.json` - Uygulama ayarları (git sync yapılandırması, dil, kullanıcı adı)",
+    "restoreTitle": "Önceki Sürümü Geri Yükleme",
+    "restoreIntro": "Verilerinizi önceki duruma geri yüklemeniz gerekiyorsa:",
+    "option1Title": "Seçenek 1: GitHub Web Arayüzünü Kullanma",
+    "option1Steps": "1. GitHub'da deponuza gidin\n2. Geçmişi görmek için \"Commits\"e tıklayın\n3. Geri yüklemek istediğiniz commit'i bulun\n4. Commit hash'ine tıklayın, ardından \"Browse files\"a tıklayın\n5. İhtiyacınız olan dosyaları indirin (board.json, notes.json, vb.)\n6. Kanbito veri klasörünüzdeki dosyaları değiştirin",
+    "option2Title": "Seçenek 2: Git Komutlarını Kullanma",
+    "option2Code": "# Commit geçmişini gör\ngit log --oneline\n\n# Belirli bir commit'e geri yükle (COMMIT_HASH'i değiştirin)\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# Veya her şeyi belirli bir commit'e geri yükle\ngit reset --hard COMMIT_HASH",
+    "option3Title": "Seçenek 3: GitHub'ın \"Restore\" Özelliğini Kullanma",
+    "option3Steps": "1. GitHub'da deponuza gidin\n2. \"Commits\"e tıklayın\n3. İstenmeyen değişiklikten önceki commit'i bulun\n4. \"...\" → \"Revert changes in this commit\"e tıklayın (yeni commit oluşturur)",
+    "note": "`.kanbito-backup/` klasörü (varsa) yalnızca yereldir ve GitHub'a senkronize edilmez."
+  },
+  "examples": {
+    "clearHint": "Bunlar örnek görevlerdir. Sıfırdan başlamak için tıklayın!",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "Tür",
+        "tags": [
+          "hata",
+          "fikir"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "Alan",
+        "tags": [
+          "iş",
+          "kişisel"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "Ne Zaman",
+        "tags": [
+          "bugün",
+          "bu-hafta",
+          "bir-gün"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Kanbito'ya Hoş Geldiniz!",
+        "tags": [
+          "rehber"
+        ],
+        "comment": "Bu Markdown destekli bir **yorum**dur!\n\nDiğer görevlere [[T2]] veya notlara [[N1]] referans verebilirsiniz.",
+        "description": "## Kanbito'ya Hoş Geldiniz!\n\nBu sizin kişisel **Kanban panonuz**. İşte yapabilecekleriniz:\n\n- Görevleri sütunlar arasında **sürükleyip bırakın**\n- Görevleri düzenlemek ve filtrelemek için **etiketler ekleyin**\n- Açıklamalarda ve yorumlarda **Markdown kullanın**\n- `[[T2]]` ile görevlere veya `[[N1]]` ile notlara **bağlantı verin**\n\n### Bu özellikleri deneyin:\n1. Etiketlere göre filtrelemek için **filtre düğmesine** (sağ alt) tıklayın\n2. Görevin üzerine gelin ve alt görev eklemek için **+**'ya tıklayın\n3. GitHub senkronizasyonunu etkinleştirmek için **⚙️**'ya tıklayın\n\nEtiket filtreleme hakkında bilgi edinmek için [[T2]]'ye bakın!"
+      },
+      "2": {
+        "title": "Görevlerinizi filtrelemeyi deneyin",
+        "tags": [
+          "rehber",
+          "bugün"
+        ],
+        "description": "## Etiketlere göre filtrelemeyi öğrenin\n\nKanbito, **etiket grupları** kullanarak görevleri filtrelemenizi sağlar. Şimdi deneyin:\n\n1. Sağ alt köşedeki **filtre düğmesine** tıklayın\n2. 3 örnek grup göreceksiniz:\n   - **Tür**: hata, fikir\n   - **Alan**: iş, kişisel\n   - **Ne Zaman**: bugün, bu-hafta, bir-gün\n\n### Nasıl çalışır:\n- Panoyu filtrelemek için bir etikete tıklayın\n- Aynı gruptaki etiketler **VEYA** mantığı kullanır (herhangi bir eşleşmeyi göster)\n- Gruplar arasındaki etiketler **VE** mantığı kullanır (tümüyle eşleşmeli)\n\n### Gruplarınızı özelleştirin:\nKendi organizasyon sisteminizi oluşturmak için \"Etiket gruplarını yönet\"e tıklayın!\n\n> Sadece işle ilgili görevleri görmek için `iş` ile filtreleyin."
+      },
+      "3": {
+        "title": "Giriş sayfası yazım hatasını düzelt",
+        "tags": [
+          "hata",
+          "iş",
+          "bugün"
+        ],
+        "description": "Giriş sayfasında düzeltilmesi gereken bir yazım hatası var.\n\n**Konum:** `src/pages/Login.tsx`\n\n- [ ] Yazım hatasını bul\n- [ ] Düzelt\n- [ ] Sayfayı test et"
+      },
+      "4": {
+        "title": "Karanlık mod geçişi ekle",
+        "tags": [
+          "fikir",
+          "iş",
+          "bu-hafta"
+        ],
+        "description": "Kullanıcılar karanlık mod seçeneği istedi.\n\n### Gereksinimler:\n- Ayarlarda geçiş\n- Tercihi kaydet\n- Sistem tercih algılama\n\n### Notlar:\nDaha fazla proje fikri için [[N2]]'ye bakın."
+      },
+      "5": {
+        "title": "Hafta sonu gezisi planla",
+        "tags": [
+          "kişisel",
+          "bu-hafta"
+        ],
+        "description": "Hafta sonu kaçamağı planla.\n\n- [ ] Varış noktası seç\n- [ ] Konaklama rezervasyonu yap\n- [ ] Aktiviteleri planla"
+      },
+      "6": {
+        "title": "Dokümantasyonu güncelle",
+        "tags": [
+          "iş"
+        ],
+        "description": "Dokümantasyon en son API değişiklikleriyle güncellendi."
+      },
+      "7": {
+        "title": "Yeni bir dil öğren",
+        "tags": [
+          "kişisel",
+          "bir-gün"
+        ],
+        "description": "Yeni bir programlama dili veya konuşma dili öğren.\n\nFikirler:\n- Rust\n- Go\n- Japonca"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "Notlara Hoş Geldiniz",
+        "content": "# Notlara Hoş Geldiniz\n\nNotlar dokümantasyon, fikirler ve uzun içerikler için mükemmeldir.\n\n## Özellikler\n\n- **Hiyerarşik yapı** - İç içe alt notlar oluşturun\n- **Markdown desteği** - Tam biçimlendirme\n- **Çapraz referanslar** - `[[T1]]` ile görevlere bağlantı\n- **Sürükle & bırak** - Notlarınızı yeniden düzenleyin\n\n## Başlarken\n\nYeni notlar oluşturmak için **+** düğmesine tıklayın. Gezinmek için kenar çubuğunu kullanın."
+      },
+      "2": {
+        "title": "Proje Fikirleri",
+        "content": "# Proje Fikirleri\n\nBeyin fırtınası ve fikir toplama yeri.\n\n## Oluşturulacak özellikler\n- [ ] Karanlık mod\n- [ ] PDF'e aktar\n- [ ] Mobil uygulama\n\n## Araştırma\n- Rakip özelliklerini kontrol et\n- Kullanıcı geri bildirim temaları\n\n---\n*Kendi fikirlerinizi buraya ekleyin!*"
+      },
+      "3": {
+        "title": "Hızlı Referans",
+        "content": "# Hızlı Referans\n\n## Klavye kısayolları\n- `Esc` - Diyalogları kapat\n- `Ctrl+Enter` - Not/yorum kaydet\n\n## Çapraz referanslar\n- `[[T5]]` → Görev 5'e bağlantı\n- `[[N2]]` → Not 2'ye bağlantı\n\n## Resimler\n`Ctrl+V` ile doğrudan resim yapıştırın"
+      }
+    }
+  }
+}

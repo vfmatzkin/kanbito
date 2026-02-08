@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "Willkommen bei Kanbito!",
+    "whatWillYouUse": "Wofür werden Sie Kanbito verwenden?",
+    "both": "Beides",
+    "bothDesc": "Aufgabentafel + Notizen",
+    "boardOnly": "Nur Tafel",
+    "boardOnlyDesc": "Kanban-Aufgabenverwaltung",
+    "notesOnly": "Nur Notizen",
+    "notesOnlyDesc": "Markdown-Dokumentation",
+    "almostReady": "Fast fertig!",
+    "setupPrefs": "Richten Sie Ihre Einstellungen ein",
+    "yourName": "Ihr Name",
+    "yourNamePlaceholder": "Geben Sie Ihren Namen ein",
+    "back": "Zurück",
+    "getStarted": "Loslegen",
+    "changeInSettings": "Sie können dies später in den Einstellungen ändern",
+    "cloneSuccess": "Repository erfolgreich geklont!",
+    "connectVia": "Verbinden über",
+    "dataFolder": "Datenordner",
+    "dataFolderHint": "Wo deine Aufgaben und Notizen gespeichert werden",
+    "folderNotEmpty": "Der ausgewählte Ordner ist nicht leer. Möchtest du ihn leeren und neu beginnen?",
+    "folderNotEmptyClone": "Der Ordner wird geleert und das Repository wird geklont. Fortfahren?",
+    "gitRepo": "Mit GitHub synchronisieren (optional)",
+    "gitRepoHint": "Ein bestehendes Kanbito-Repo klonen, um geräteübergreifend zu synchronisieren",
+    "gitRepoPlaceholder": "user/repo (nutzt SSH) oder vollständige URL",
+    "noIdentities": "Keine GitHub-Identitäten gefunden - führe zuerst 'gh auth login' aus"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "Tafel",
+    "notes": "Notizen"
+  },
+  "user": {
+    "change": "Benutzername ändern:",
+    "anonymous": "Anonym"
+  },
+  "save": {
+    "saving": "Speichern...",
+    "saved": "Gespeichert",
+    "error": "Fehler beim Speichern"
+  },
+  "git": {
+    "sync": "Synchronisieren",
+    "syncing": "Synchronisiere...",
+    "noRepo": "Kein Repository",
+    "upToDate": "✓",
+    "unsaved": "{{count}} nicht gespeichert",
+    "available": "↓ {{count}} verfügbar",
+    "syncNeeded": "↕ Synchronisation erforderlich",
+    "syncFailed": "Synchronisation fehlgeschlagen"
+  },
+  "conflict": {
+    "title": "Synchronisationskonflikt",
+    "description": "Ihre Änderungen und die Cloud-Änderungen überschneiden sich. Was möchten Sie tun?",
+    "keepLocal": "Ihre behalten",
+    "keepLocalDesc": "Ihre Version in die Cloud hochladen",
+    "keepCloud": "Cloud behalten",
+    "keepCloudDesc": "Ihre Änderungen verwerfen",
+    "keepCloudBackup": "Cloud + Backup behalten",
+    "keepCloudBackupDesc": "Cloud-Version herunterladen, Ihre Änderungen werden gespeichert (Rückgängig zum Wiederherstellen verwenden)",
+    "decideLater": "Später entscheiden",
+    "recommended": "Empfohlen",
+    "confirmKeepLocal": "Dies wird Ihre Version in die Cloud hochladen. Die vorherige Cloud-Version kann aus dem Repository-Verlauf wiederhergestellt werden.",
+    "confirmKeepCloud": "Dies wird Ihre Version durch die Cloud ersetzen. Ihre lokalen Änderungen gehen verloren und können nicht wiederhergestellt werden.",
+    "confirmBtn": "Ja, fortfahren",
+    "showDiff": "Unterschiede anzeigen",
+    "hideDiff": "Unterschiede ausblenden",
+    "myChanges": "Ihre Änderungen",
+    "cloudChanges": "Cloud-Änderungen",
+    "legendLocalDel": "War",
+    "legendLocalAdd": "Sie haben geändert zu",
+    "legendRemoteDel": "War",
+    "legendRemoteAdd": "In der Cloud geändert zu"
+  },
+  "backup": {
+    "restore": "Vorherigen Zustand wiederherstellen",
+    "confirmRestore": "Vorherigen Zustand wiederherstellen? Dies ersetzt Ihre aktuellen Daten.",
+    "confirmUndo": "Letzte Synchronisation rückgängig machen? Dies stellt Ihre vorherigen Daten wieder her.",
+    "restored": "Erfolgreich wiederhergestellt",
+    "restoreFailed": "Wiederherstellung fehlgeschlagen",
+    "undo": "Rückgängig"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "gitSync": "GitHub-Synchronisation",
+    "repository": "GitHub-Repository",
+    "repositoryPlaceholder": "benutzer/repo oder GitHub-URL einfügen",
+    "connectVia": "Verbinden über",
+    "testConnection": "Verbindung testen",
+    "createRepo": "Repository erstellen",
+    "openOnGitHub": "Auf GitHub öffnen",
+    "creating": "Erstellen...",
+    "testing": "Testen...",
+    "connectionSuccess": "Verbindung erfolgreich!",
+    "connectionFailed": "Verbindung fehlgeschlagen",
+    "dataManagement": "Datenverwaltung",
+    "restoreExamples": "Beispiele wiederherstellen",
+    "clearExamples": "Beispiele löschen",
+    "restoreHint": "<strong>Beispiele wiederherstellen:</strong> Beispielaufgaben und -notizen laden, um Funktionen zu erkunden",
+    "clearHint": "<strong>Beispiele löschen:</strong> Beispielaufgaben und -notizen entfernen, um neu zu beginnen",
+    "clearExamplesTitle": "Beispieldaten löschen",
+    "close": "Schließen",
+    "save": "Speichern",
+    "notConfigured": "Nicht konfiguriert",
+    "username": "Benutzername",
+    "usernameHint": "Wird für Kommentare und Zuordnungen verwendet",
+    "usernamePlaceholder": "Ihr Name",
+    "language": "Sprache",
+    "languageHint": "Wählen Sie Ihre bevorzugte Sprache",
+    "showSections": "Bereiche anzeigen",
+    "showSectionsHint": "Mindestens einer muss aktiviert sein"
+  },
+  "task": {
+    "new": "Neue Aufgabe",
+    "edit": "Aufgabe bearbeiten",
+    "title": "Titel",
+    "titlePlaceholder": "Aufgabentitel",
+    "description": "Beschreibung (optional, unterstützt Markdown)",
+    "descPlaceholder": "Details, User Story, Notizen...",
+    "tags": "Tags",
+    "tagsPlaceholder": "Tag eingeben und Enter oder Komma drücken",
+    "pasteHint": "Bilder direkt mit Strg+V einfügen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "addTask": "+ Aufgabe hinzufügen",
+    "addSubtask": "Unteraufgabe hinzufügen",
+    "newSubtaskOf": "Neue Unteraufgabe von T{{id}}",
+    "subtasks": "Unteraufgaben",
+    "subtasksCount": "{{count}} Unteraufgabe(n)",
+    "noSubtasks": "Keine Unteraufgaben",
+    "add": "+ Hinzufügen",
+    "noDescription": "Keine Beschreibung",
+    "created": "Erstellt:",
+    "modified": "Geändert:",
+    "backlog": "Backlog",
+    "restore": "Wiederherstellen",
+    "delete": "Löschen",
+    "edit_btn": "Bearbeiten",
+    "close": "Schließen",
+    "taskNotFound": "Aufgabe nicht gefunden",
+    "subtaskOf": "Unteraufgabe von:"
+  },
+  "columns": {
+    "todo": "Zu erledigen",
+    "doing": "In Bearbeitung",
+    "review": "Zur Überprüfung",
+    "done": "Erledigt"
+  },
+  "backlog": {
+    "title": "Backlog",
+    "restore": "Nach Zu erledigen wiederherstellen",
+    "delete": "Löschen"
+  },
+  "trash": {
+    "title": "Papierkorb",
+    "empty": "Leeren",
+    "emptyConfirm": "Papierkorb leeren? {{count}} Aufgabe(n) werden dauerhaft gelöscht.",
+    "permanentDelete": "Dauerhaft löschen",
+    "permanentDeleteConfirm": "Diese Aufgabe dauerhaft löschen? Dies kann nicht rückgängig gemacht werden."
+  },
+  "comments": {
+    "title": "Kommentare",
+    "titleCount": "Kommentare ({{count}})",
+    "placeholder": "Kommentar schreiben (unterstützt Markdown)...",
+    "send": "Senden",
+    "deleteConfirm": "Diesen Kommentar löschen?"
+  },
+  "notes": {
+    "title": "Notizen",
+    "new": "Neue Notiz",
+    "select": "Notiz auswählen",
+    "titlePlaceholder": "Notiztitel",
+    "contentPlaceholder": "Inhalt in Markdown...",
+    "edit": "Bearbeiten",
+    "addChild": "+ Unternotiz",
+    "delete": "Löschen",
+    "deleteConfirm": "Diese Notiz und alle Unternotizen löschen?",
+    "noteNotFound": "Notiz nicht gefunden"
+  },
+  "confirm": {
+    "clearAllData": "Sind Sie sicher, dass Sie ALLE Aufgaben, Notizen und Bilder löschen möchten?\n\nDies kann nicht rückgängig gemacht werden!",
+    "clearExamples": "Beispielaufgaben und -notizen entfernen?\n\nIhre eigenen Inhalte bleiben erhalten.",
+    "restoreExamples": "Dies ersetzt alle aktuellen Daten durch Beispielaufgaben und -notizen.\n\nFortfahren?",
+    "reloadExamples": "Sprache geändert. Möchten Sie die Beispielaufgaben und -notizen in der neuen Sprache neu laden?\n\nDies ersetzt alle aktuellen Daten."
+  },
+  "prompt": {
+    "subtasksMove": "Diese Aufgabe hat {{count}} Unteraufgabe(n).\n\nEingeben:\n  \"all\" - Aufgabe und Unteraufgaben ins Backlog verschieben\n  \"only\" - nur diese Aufgabe verschieben (Unteraufgaben werden verwaist)\n  \"cancel\" - nichts tun",
+    "subtasksDelete": "Diese Aufgabe hat {{count}} Unteraufgabe(n).\n\nEingeben:\n  \"all\" - Aufgabe und Unteraufgaben löschen\n  \"only\" - nur diese Aufgabe löschen (Unteraufgaben werden verwaist)\n  \"cancel\" - nichts tun",
+    "subtasksRestore": "Diese Aufgabe hat {{count}} Unteraufgabe(n) in {{location}}.\n\nEingeben:\n  \"all\" - Aufgabe und Unteraufgaben wiederherstellen\n  \"only\" - nur diese Aufgabe wiederherstellen\n  \"cancel\" - nichts tun",
+    "subtasksPermanent": "Diese Aufgabe hat {{count}} Unteraufgabe(n) im Papierkorb.\n\nEingeben:\n  \"all\" - Aufgabe und Unteraufgaben dauerhaft löschen\n  \"only\" - nur diese Aufgabe löschen\n  \"cancel\" - nichts tun",
+    "defaultAll": "all",
+    "backlog": "Backlog",
+    "theTrash": "Papierkorb"
+  },
+  "xref": {
+    "taskNotFound": "Aufgabe nicht gefunden",
+    "noteNotFound": "Notiz nicht gefunden"
+  },
+  "filter": {
+    "title": "Nach Tags filtern",
+    "active": "aktiv",
+    "clear": "Löschen",
+    "manageGroups": "Tag-Gruppen verwalten",
+    "any": "Beliebig",
+    "all": "Alle",
+    "noGroups": "Noch keine Tag-Gruppen. Erstellen Sie eine, um Ihre Tags zu organisieren.",
+    "groupName": "Gruppenname",
+    "addGroup": "Gruppe hinzufügen",
+    "untitledGroup": "Unbenannt",
+    "dropHere": "Tags hier ablegen"
+  },
+  "readme": {
+    "title": "Kanbito-Daten",
+    "intro": "Dieses Repository enthält Daten von [Kanbito](https://github.com/vfmatzkin/kanbito), einer persönlichen Kanban-Board-App.",
+    "filesTitle": "Dateien",
+    "filesBoard": "`board.json` - Aufgaben-Metadaten (Spalten, Aufgabenliste, Backlog, Papierkorb)",
+    "filesNotes": "`notes.json` - Notizen-Metadaten (Baumstruktur)",
+    "filesTasks": "`tasks/` - Aufgabenbeschreibungen in Markdown (T1.md, T2.md, ...)",
+    "filesNotesDir": "`notes/` - Notizinhalt in Markdown (N1.md, N2.md, ...)",
+    "filesImages": "`images/` - Angehängte Bilder",
+    "filesSettings": "`.kanbito.json` - App-Einstellungen (Git-Sync-Konfiguration, Sprache, Benutzername)",
+    "restoreTitle": "Eine frühere Version wiederherstellen",
+    "restoreIntro": "Wenn Sie Ihre Daten auf einen früheren Zustand wiederherstellen müssen:",
+    "option1Title": "Option 1: GitHub-Weboberfläche verwenden",
+    "option1Steps": "1. Gehen Sie zu Ihrem Repository auf GitHub\n2. Klicken Sie auf \"Commits\", um den Verlauf zu sehen\n3. Finden Sie den Commit, zu dem Sie wiederherstellen möchten\n4. Klicken Sie auf den Commit-Hash, dann auf \"Browse files\"\n5. Laden Sie die benötigten Dateien herunter (board.json, notes.json, usw.)\n6. Ersetzen Sie die Dateien in Ihrem Kanbito-Datenordner",
+    "option2Title": "Option 2: Git-Befehle verwenden",
+    "option2Code": "# Commit-Verlauf anzeigen\ngit log --oneline\n\n# Zu einem bestimmten Commit wiederherstellen (COMMIT_HASH ersetzen)\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# Oder alles zu einem bestimmten Commit wiederherstellen\ngit reset --hard COMMIT_HASH",
+    "option3Title": "Option 3: GitHubs \"Wiederherstellen\"-Funktion verwenden",
+    "option3Steps": "1. Gehen Sie zu Ihrem Repository auf GitHub\n2. Klicken Sie auf \"Commits\"\n3. Finden Sie den Commit vor der unerwünschten Änderung\n4. Klicken Sie \"...\" → \"Revert changes in this commit\" (erstellt einen neuen Commit)",
+    "note": "Der Ordner `.kanbito-backup/` (falls vorhanden) ist nur lokal und wird nicht mit GitHub synchronisiert."
+  },
+  "examples": {
+    "clearHint": "Dies sind Beispielaufgaben. Klicken Sie, um neu zu beginnen!",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "Typ",
+        "tags": [
+          "Bug",
+          "Idee"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "Bereich",
+        "tags": [
+          "Arbeit",
+          "Persönlich"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "Wann",
+        "tags": [
+          "heute",
+          "diese-Woche",
+          "irgendwann"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Willkommen bei Kanbito!",
+        "tags": [
+          "Anleitung"
+        ],
+        "comment": "Dies ist ein **Kommentar** mit Markdown-Unterstützung!\n\nSie können auf andere Aufgaben wie [[T2]] oder Notizen wie [[N1]] verweisen.",
+        "description": "## Willkommen bei Kanbito!\n\nDies ist Ihr persönliches **Kanban-Board**. Folgendes können Sie tun:\n\n- Aufgaben zwischen Spalten **ziehen und ablegen**\n- **Tags hinzufügen**, um Aufgaben zu organisieren und zu filtern\n- **Markdown verwenden** in Beschreibungen und Kommentaren\n- **Aufgaben verlinken** mit `[[T2]]` oder Notizen mit `[[N1]]`\n\n### Probieren Sie diese Funktionen aus:\n1. Klicken Sie auf die **Filterschaltfläche** (unten rechts), um nach Tags zu filtern\n2. Bewegen Sie den Mauszeiger über eine Aufgabe und klicken Sie **+**, um Unteraufgaben hinzuzufügen\n3. Klicken Sie auf **⚙️**, um die GitHub-Synchronisation zu aktivieren\n\nSiehe [[T2]], um mehr über das Filtern nach Tags zu erfahren!"
+      },
+      "2": {
+        "title": "Versuchen Sie, Ihre Aufgaben zu filtern",
+        "tags": [
+          "Anleitung",
+          "heute"
+        ],
+        "description": "## Lernen Sie, nach Tags zu filtern\n\nKanbito ermöglicht Ihnen, Aufgaben mit **Tag-Gruppen** zu filtern. Probieren Sie es jetzt aus:\n\n1. Klicken Sie auf die **Filterschaltfläche** in der unteren rechten Ecke\n2. Sie sehen 3 Beispielgruppen:\n   - **Typ**: Bug, Idee\n   - **Bereich**: Arbeit, Persönlich\n   - **Wann**: heute, diese-Woche, irgendwann\n\n### Wie es funktioniert:\n- Klicken Sie auf einen Tag, um die Tafel zu filtern\n- Tags in derselben Gruppe verwenden **ODER**-Logik (zeigt jeden Treffer)\n- Tags zwischen Gruppen verwenden **UND**-Logik (muss alle erfüllen)\n\n### Passen Sie Ihre Gruppen an:\nKlicken Sie auf \"Tag-Gruppen verwalten\", um Ihr eigenes Organisationssystem zu erstellen!\n\n> Versuchen Sie, nach `Arbeit` zu filtern, um nur arbeitsbezogene Aufgaben zu sehen."
+      },
+      "3": {
+        "title": "Tippfehler auf der Login-Seite beheben",
+        "tags": [
+          "Bug",
+          "Arbeit",
+          "heute"
+        ],
+        "description": "Es gibt einen Tippfehler auf der Login-Seite, der behoben werden muss.\n\n**Ort:** `src/pages/Login.tsx`\n\n- [ ] Tippfehler finden\n- [ ] Beheben\n- [ ] Seite testen"
+      },
+      "4": {
+        "title": "Dunkelmodus-Schalter hinzufügen",
+        "tags": [
+          "Idee",
+          "Arbeit",
+          "diese-Woche"
+        ],
+        "description": "Benutzer haben einen Dunkelmodus angefordert.\n\n### Anforderungen:\n- Schalter in den Einstellungen\n- Präferenz speichern\n- Systempräferenz-Erkennung\n\n### Notizen:\nSiehe [[N2]] für weitere Projektideen."
+      },
+      "5": {
+        "title": "Wochenendausflug planen",
+        "tags": [
+          "Persönlich",
+          "diese-Woche"
+        ],
+        "description": "Einen Wochenendausflug planen.\n\n- [ ] Ziel wählen\n- [ ] Unterkunft buchen\n- [ ] Aktivitäten planen"
+      },
+      "6": {
+        "title": "Dokumentation aktualisieren",
+        "tags": [
+          "Arbeit"
+        ],
+        "description": "Die Dokumentation wurde mit den neuesten API-Änderungen aktualisiert."
+      },
+      "7": {
+        "title": "Eine neue Sprache lernen",
+        "tags": [
+          "Persönlich",
+          "irgendwann"
+        ],
+        "description": "Eine neue Programmiersprache oder gesprochene Sprache lernen.\n\nIdeen:\n- Rust\n- Go\n- Japanisch"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "Willkommen bei Notizen",
+        "content": "# Willkommen bei Notizen\n\nNotizen sind perfekt für Dokumentation, Ideen und längere Inhalte.\n\n## Funktionen\n\n- **Hierarchische Struktur** - Erstellen Sie verschachtelte Unternotizen\n- **Markdown-Unterstützung** - Vollständige Formatierung\n- **Querverweise** - Verlinken Sie zu Aufgaben mit `[[T1]]`\n- **Ziehen und Ablegen** - Organisieren Sie Ihre Notizen neu\n\n## Erste Schritte\n\nKlicken Sie auf die **+**-Schaltfläche, um neue Notizen zu erstellen. Verwenden Sie die Seitenleiste zur Navigation."
+      },
+      "2": {
+        "title": "Projektideen",
+        "content": "# Projektideen\n\nEin Ort zum Brainstormen und Sammeln von Ideen.\n\n## Zu bauende Funktionen\n- [ ] Dunkelmodus\n- [ ] PDF-Export\n- [ ] Mobile App\n\n## Recherche\n- Wettbewerberfunktionen prüfen\n- Benutzer-Feedback-Themen\n\n---\n*Fügen Sie hier Ihre eigenen Ideen hinzu!*"
+      },
+      "3": {
+        "title": "Kurzreferenz",
+        "content": "# Kurzreferenz\n\n## Tastenkombinationen\n- `Esc` - Dialoge schließen\n- `Strg+Enter` - Notiz/Kommentar speichern\n\n## Querverweise\n- `[[T5]]` → Link zu Aufgabe 5\n- `[[N2]]` → Link zu Notiz 2\n\n## Bilder\nFügen Sie Bilder direkt mit `Strg+V` ein"
+      }
+    }
+  }
+}

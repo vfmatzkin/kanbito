@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "欢迎使用 Kanbito！",
+    "whatWillYouUse": "您将如何使用 Kanbito？",
+    "both": "两者都要",
+    "bothDesc": "任务看板 + 笔记",
+    "boardOnly": "仅看板",
+    "boardOnlyDesc": "看板任务管理",
+    "notesOnly": "仅笔记",
+    "notesOnlyDesc": "Markdown 文档",
+    "almostReady": "即将完成！",
+    "setupPrefs": "设置您的偏好",
+    "yourName": "您的姓名",
+    "yourNamePlaceholder": "请输入您的姓名",
+    "back": "返回",
+    "getStarted": "开始使用",
+    "changeInSettings": "您可以稍后在设置中更改",
+    "cloneSuccess": "仓库克隆成功！",
+    "connectVia": "连接方式",
+    "dataFolder": "数据文件夹",
+    "dataFolderHint": "您的任务和笔记保存的位置",
+    "folderNotEmpty": "所选文件夹不为空。是否清空并重新开始？",
+    "folderNotEmptyClone": "文件夹将被清空并克隆仓库。是否继续？",
+    "gitRepo": "与 GitHub 同步（可选）",
+    "gitRepoHint": "克隆现有的 Kanbito 仓库以在设备间同步",
+    "gitRepoPlaceholder": "user/repo（使用 SSH）或完整 URL",
+    "noIdentities": "未找到 GitHub 身份 - 请先运行 'gh auth login'"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "看板",
+    "notes": "笔记"
+  },
+  "user": {
+    "change": "更改用户名：",
+    "anonymous": "匿名"
+  },
+  "save": {
+    "saving": "保存中...",
+    "saved": "已保存",
+    "error": "保存失败"
+  },
+  "git": {
+    "sync": "同步",
+    "syncing": "同步中...",
+    "noRepo": "无仓库",
+    "upToDate": "✓",
+    "unsaved": "{{count}} 未保存",
+    "available": "↓ {{count}} 可用",
+    "syncNeeded": "↕ 需要同步",
+    "syncFailed": "同步失败"
+  },
+  "conflict": {
+    "title": "同步冲突",
+    "description": "您的更改与云端更改存在冲突。您想如何处理？",
+    "keepLocal": "保留本地版本",
+    "keepLocalDesc": "将您的版本上传到云端",
+    "keepCloud": "保留云端版本",
+    "keepCloudDesc": "放弃您的更改",
+    "keepCloudBackup": "保留云端版本 + 备份",
+    "keepCloudBackupDesc": "下载云端版本，您的更改已保存（使用撤销来恢复）",
+    "decideLater": "稍后决定",
+    "recommended": "推荐",
+    "confirmKeepLocal": "这将把您的版本上传到云端。之前的云端版本仍可从仓库历史记录中恢复。",
+    "confirmKeepCloud": "这将用云端版本替换您的版本。您的本地更改将丢失且无法恢复。",
+    "confirmBtn": "是的，继续",
+    "showDiff": "显示差异",
+    "hideDiff": "隐藏差异",
+    "myChanges": "您的编辑",
+    "cloudChanges": "云端编辑",
+    "legendLocalDel": "原来是",
+    "legendLocalAdd": "您更改为",
+    "legendRemoteDel": "原来是",
+    "legendRemoteAdd": "云端更改为"
+  },
+  "backup": {
+    "restore": "恢复到之前的状态",
+    "confirmRestore": "恢复到之前的状态？这将替换您当前的数据。",
+    "confirmUndo": "撤销上次同步？这将恢复您之前的数据。",
+    "restored": "恢复成功",
+    "restoreFailed": "恢复失败",
+    "undo": "撤销"
+  },
+  "settings": {
+    "title": "设置",
+    "gitSync": "GitHub 同步",
+    "repository": "GitHub 仓库",
+    "repositoryPlaceholder": "用户名/仓库 或粘贴 GitHub 链接",
+    "connectVia": "连接方式",
+    "testConnection": "测试连接",
+    "createRepo": "创建仓库",
+    "openOnGitHub": "在 GitHub 上打开",
+    "creating": "创建中...",
+    "testing": "测试中...",
+    "connectionSuccess": "连接成功！",
+    "connectionFailed": "连接失败",
+    "dataManagement": "数据管理",
+    "restoreExamples": "恢复示例",
+    "clearExamples": "清除示例",
+    "restoreHint": "<strong>恢复示例：</strong>加载示例任务和笔记以探索功能",
+    "clearHint": "<strong>清除示例：</strong>删除示例任务和笔记以重新开始",
+    "clearExamplesTitle": "清除示例数据",
+    "close": "关闭",
+    "save": "保存",
+    "notConfigured": "未配置",
+    "username": "用户名",
+    "usernameHint": "用于评论和归属",
+    "usernamePlaceholder": "您的姓名",
+    "language": "语言",
+    "languageHint": "选择您的首选语言",
+    "showSections": "显示板块",
+    "showSectionsHint": "至少需要启用一个"
+  },
+  "task": {
+    "new": "新任务",
+    "edit": "编辑任务",
+    "title": "标题",
+    "titlePlaceholder": "任务标题",
+    "description": "描述（可选，支持 Markdown）",
+    "descPlaceholder": "详情、用户故事、备注...",
+    "tags": "标签",
+    "tagsPlaceholder": "输入标签后按回车或逗号",
+    "pasteHint": "使用 Ctrl+V 直接粘贴图片",
+    "cancel": "取消",
+    "save": "保存",
+    "addTask": "+ 添加任务",
+    "addSubtask": "添加子任务",
+    "newSubtaskOf": "T{{id}} 的新子任务",
+    "subtasks": "子任务",
+    "subtasksCount": "{{count}} 个子任务",
+    "noSubtasks": "无子任务",
+    "add": "+ 添加",
+    "noDescription": "无描述",
+    "created": "创建于：",
+    "modified": "修改于：",
+    "backlog": "待办池",
+    "restore": "恢复",
+    "delete": "删除",
+    "edit_btn": "编辑",
+    "close": "关闭",
+    "taskNotFound": "未找到任务",
+    "subtaskOf": "子任务属于："
+  },
+  "columns": {
+    "todo": "待办",
+    "doing": "进行中",
+    "review": "待审核",
+    "done": "已完成"
+  },
+  "backlog": {
+    "title": "待办池",
+    "restore": "恢复到待办",
+    "delete": "删除"
+  },
+  "trash": {
+    "title": "回收站",
+    "empty": "清空",
+    "emptyConfirm": "清空回收站？{{count}} 个任务将被永久删除。",
+    "permanentDelete": "永久删除",
+    "permanentDeleteConfirm": "永久删除此任务？此操作无法撤销。"
+  },
+  "comments": {
+    "title": "评论",
+    "titleCount": "评论 ({{count}})",
+    "placeholder": "写评论（支持 Markdown）...",
+    "send": "发送",
+    "deleteConfirm": "删除此评论？"
+  },
+  "notes": {
+    "title": "笔记",
+    "new": "新笔记",
+    "select": "选择一个笔记",
+    "titlePlaceholder": "笔记标题",
+    "contentPlaceholder": "Markdown 内容...",
+    "edit": "编辑",
+    "addChild": "+ 子笔记",
+    "delete": "删除",
+    "deleteConfirm": "删除此笔记及其所有子笔记？",
+    "noteNotFound": "未找到笔记"
+  },
+  "confirm": {
+    "clearAllData": "确定要删除所有任务、笔记和图片吗？\n\n此操作无法撤销！",
+    "clearExamples": "删除示例任务和笔记？\n\n您自己的内容将被保留。",
+    "restoreExamples": "这将用示例任务和笔记替换所有当前数据。\n\n继续？",
+    "reloadExamples": "语言已更改。是否要以新语言重新加载示例任务和笔记？\n\n这将替换所有当前数据。"
+  },
+  "prompt": {
+    "subtasksMove": "此任务有 {{count}} 个子任务。\n\n请输入：\n  \"all\" - 将任务和子任务移至待办池\n  \"only\" - 仅移动此任务（子任务将成为孤立项）\n  \"cancel\" - 不执行任何操作",
+    "subtasksDelete": "此任务有 {{count}} 个子任务。\n\n请输入：\n  \"all\" - 删除任务和子任务\n  \"only\" - 仅删除此任务（子任务将成为孤立项）\n  \"cancel\" - 不执行任何操作",
+    "subtasksRestore": "此任务在{{location}}中有 {{count}} 个子任务。\n\n请输入：\n  \"all\" - 恢复任务和子任务\n  \"only\" - 仅恢复此任务\n  \"cancel\" - 不执行任何操作",
+    "subtasksPermanent": "此任务在回收站中有 {{count}} 个子任务。\n\n请输入：\n  \"all\" - 永久删除任务和子任务\n  \"only\" - 仅删除此任务\n  \"cancel\" - 不执行任何操作",
+    "defaultAll": "all",
+    "backlog": "待办池",
+    "theTrash": "回收站"
+  },
+  "xref": {
+    "taskNotFound": "未找到任务",
+    "noteNotFound": "未找到笔记"
+  },
+  "filter": {
+    "title": "按标签筛选",
+    "active": "已激活",
+    "clear": "清除",
+    "manageGroups": "管理标签组",
+    "any": "任意",
+    "all": "全部",
+    "noGroups": "暂无标签组。创建一个来组织您的标签。",
+    "groupName": "组名",
+    "addGroup": "添加组",
+    "untitledGroup": "未命名",
+    "dropHere": "将标签拖放到此处"
+  },
+  "readme": {
+    "title": "Kanbito 数据",
+    "intro": "此仓库包含来自 [Kanbito](https://github.com/vfmatzkin/kanbito) 的数据，这是一个个人看板应用。",
+    "filesTitle": "文件",
+    "filesBoard": "`board.json` - 任务元数据（列、任务列表、待办池、回收站）",
+    "filesNotes": "`notes.json` - 笔记元数据（树形结构）",
+    "filesTasks": "`tasks/` - Markdown 格式的任务描述（T1.md、T2.md...）",
+    "filesNotesDir": "`notes/` - Markdown 格式的笔记内容（N1.md、N2.md...）",
+    "filesImages": "`images/` - 附件图片",
+    "filesSettings": "`.kanbito.json` - 应用设置（git 同步配置、语言、用户名）",
+    "restoreTitle": "恢复到之前的版本",
+    "restoreIntro": "如果您需要将数据恢复到之前的状态：",
+    "option1Title": "选项 1：使用 GitHub 网页界面",
+    "option1Steps": "1. 在 GitHub 上打开您的仓库\n2. 点击 \"Commits\" 查看历史记录\n3. 找到您想恢复到的提交\n4. 点击提交哈希，然后点击 \"Browse files\"\n5. 下载您需要的文件（board.json、notes.json 等）\n6. 替换您 Kanbito 数据文件夹中的文件",
+    "option2Title": "选项 2：使用 Git 命令",
+    "option2Code": "# 查看提交历史\ngit log --oneline\n\n# 恢复到特定提交（替换 COMMIT_HASH）\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# 或恢复所有内容到特定提交\ngit reset --hard COMMIT_HASH",
+    "option3Title": "选项 3：使用 GitHub 的 \"恢复\" 功能",
+    "option3Steps": "1. 在 GitHub 上打开您的仓库\n2. 点击 \"Commits\"\n3. 找到不需要的更改之前的提交\n4. 点击 \"...\" → \"Revert changes in this commit\"（创建新提交）",
+    "note": "`.kanbito-backup/` 文件夹（如果存在）仅存在于本地，不会同步到 GitHub。"
+  },
+  "examples": {
+    "clearHint": "这些是示例任务。点击重新开始！",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "类型",
+        "tags": [
+          "bug",
+          "想法"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "领域",
+        "tags": [
+          "工作",
+          "个人"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "时间",
+        "tags": [
+          "今天",
+          "本周",
+          "以后"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "欢迎使用 Kanbito！",
+        "tags": [
+          "指南"
+        ],
+        "comment": "这是一条支持 **Markdown** 的评论！\n\n您可以引用其他任务如 [[T2]] 或笔记如 [[N1]]。",
+        "description": "## 欢迎使用 Kanbito！\n\n这是您的个人**看板**。以下是您可以做的事情：\n\n- **拖放**任务到不同列\n- **添加标签**来组织和筛选任务\n- 在描述和评论中**使用 Markdown**\n- 使用 `[[T2]]` 或 `[[N1]]` **链接任务**或笔记\n\n### 试试这些功能：\n1. 点击右下角的**筛选按钮**按标签筛选\n2. 将鼠标悬停在任务上并点击 **+** 添加子任务\n3. 点击 **⚙️** 启用 GitHub 同步\n\n查看 [[T2]] 了解标签筛选！"
+      },
+      "2": {
+        "title": "试试筛选您的任务",
+        "tags": [
+          "指南",
+          "今天"
+        ],
+        "description": "## 学习按标签筛选\n\nKanbito 允许您使用**标签组**筛选任务。现在试试：\n\n1. 点击右下角的**筛选按钮**\n2. 您会看到 3 个示例组：\n   - **类型**：bug、想法\n   - **领域**：工作、个人\n   - **时间**：今天、本周、以后\n\n### 工作原理：\n- 点击标签来筛选看板\n- 同一组内的标签使用 **OR** 逻辑（显示任意匹配）\n- 不同组之间的标签使用 **AND** 逻辑（必须全部匹配）\n\n### 自定义您的组：\n点击 \"管理标签组\" 创建您自己的组织系统！\n\n> 试试按 `工作` 筛选，只查看工作相关的任务。"
+      },
+      "3": {
+        "title": "修复登录页面错别字",
+        "tags": [
+          "bug",
+          "工作",
+          "今天"
+        ],
+        "description": "登录页面有一个需要修复的错别字。\n\n**位置：** `src/pages/Login.tsx`\n\n- [ ] 找到错别字\n- [ ] 修复它\n- [ ] 测试页面"
+      },
+      "4": {
+        "title": "添加深色模式切换",
+        "tags": [
+          "想法",
+          "工作",
+          "本周"
+        ],
+        "description": "用户请求添加深色模式选项。\n\n### 要求：\n- 设置中的切换开关\n- 保存偏好设置\n- 检测系统偏好\n\n### 备注：\n查看 [[N2]] 获取更多项目想法。"
+      },
+      "5": {
+        "title": "计划周末旅行",
+        "tags": [
+          "个人",
+          "本周"
+        ],
+        "description": "计划一次周末出游。\n\n- [ ] 选择目的地\n- [ ] 预订住宿\n- [ ] 计划活动"
+      },
+      "6": {
+        "title": "更新文档",
+        "tags": [
+          "工作"
+        ],
+        "description": "文档已更新最新的 API 变更。"
+      },
+      "7": {
+        "title": "学习一门新语言",
+        "tags": [
+          "个人",
+          "以后"
+        ],
+        "description": "学习一门新的编程语言或口语。\n\n想法：\n- Rust\n- Go\n- 日语"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "欢迎使用笔记",
+        "content": "# 欢迎使用笔记\n\n笔记非常适合文档、想法和较长的内容。\n\n## 功能\n\n- **层次结构** - 创建嵌套的子笔记\n- **Markdown 支持** - 完整的格式化功能\n- **交叉引用** - 使用 `[[T1]]` 链接到任务\n- **拖放** - 重新组织您的笔记\n\n## 开始使用\n\n点击 **+** 按钮创建新笔记。使用侧边栏导航。"
+      },
+      "2": {
+        "title": "项目想法",
+        "content": "# 项目想法\n\n一个用于头脑风暴和收集想法的地方。\n\n## 要构建的功能\n- [ ] 深色模式\n- [ ] 导出为 PDF\n- [ ] 移动应用\n\n## 研究\n- 查看竞争对手的功能\n- 用户反馈主题\n\n---\n*在这里添加您自己的想法！*"
+      },
+      "3": {
+        "title": "快速参考",
+        "content": "# 快速参考\n\n## 键盘快捷键\n- `Esc` - 关闭对话框\n- `Ctrl+Enter` - 保存笔记/评论\n\n## 交叉引用\n- `[[T5]]` → 链接到任务 5\n- `[[N2]]` → 链接到笔记 2\n\n## 图片\n使用 `Ctrl+V` 直接粘贴图片"
+      }
+    }
+  }
+}

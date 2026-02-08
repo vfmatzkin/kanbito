@@ -1,0 +1,336 @@
+{
+  "welcome": {
+    "title": "Kanbito에 오신 것을 환영합니다!",
+    "whatWillYouUse": "Kanbito를 어떻게 사용하시겠습니까?",
+    "both": "둘 다",
+    "bothDesc": "작업 보드 + 노트",
+    "boardOnly": "보드만",
+    "boardOnlyDesc": "칸반 작업 관리",
+    "notesOnly": "노트만",
+    "notesOnlyDesc": "마크다운 문서",
+    "almostReady": "거의 준비 완료!",
+    "setupPrefs": "설정을 구성하세요",
+    "yourName": "이름",
+    "yourNamePlaceholder": "이름을 입력하세요",
+    "back": "뒤로",
+    "getStarted": "시작하기",
+    "changeInSettings": "나중에 설정에서 변경할 수 있습니다",
+    "cloneSuccess": "저장소가 성공적으로 복제되었습니다!",
+    "connectVia": "연결 방법",
+    "dataFolder": "데이터 폴더",
+    "dataFolderHint": "작업과 메모가 저장되는 위치",
+    "folderNotEmpty": "선택한 폴더가 비어 있지 않습니다. 지우고 새로 시작하시겠습니까?",
+    "folderNotEmptyClone": "폴더가 지워지고 저장소가 복제됩니다. 계속하시겠습니까?",
+    "gitRepo": "GitHub와 동기화 (선택사항)",
+    "gitRepoHint": "기존 Kanbito 저장소를 복제하여 기기 간 동기화",
+    "gitRepoPlaceholder": "user/repo (SSH 사용) 또는 전체 URL",
+    "noIdentities": "GitHub ID를 찾을 수 없음 - 먼저 'gh auth login'을 실행하세요"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "보드",
+    "notes": "노트"
+  },
+  "user": {
+    "change": "사용자 이름 변경:",
+    "anonymous": "익명"
+  },
+  "save": {
+    "saving": "저장 중...",
+    "saved": "저장됨",
+    "error": "저장 오류"
+  },
+  "git": {
+    "sync": "동기화",
+    "syncing": "동기화 중...",
+    "noRepo": "저장소 없음",
+    "upToDate": "✓",
+    "unsaved": "{{count}}개 미저장",
+    "available": "↓ {{count}}개 사용 가능",
+    "syncNeeded": "↕ 동기화 필요",
+    "syncFailed": "동기화 실패"
+  },
+  "conflict": {
+    "title": "동기화 충돌",
+    "description": "변경 사항과 클라우드 변경 사항이 겹칩니다. 어떻게 하시겠습니까?",
+    "keepLocal": "내 것 유지",
+    "keepLocalDesc": "내 버전을 클라우드에 업로드",
+    "keepCloud": "클라우드 유지",
+    "keepCloudDesc": "내 변경 사항 삭제",
+    "keepCloudBackup": "클라우드 + 백업 유지",
+    "keepCloudBackupDesc": "클라우드 버전 다운로드, 변경 사항 저장됨 (실행 취소로 복원 가능)",
+    "decideLater": "나중에 결정",
+    "recommended": "권장",
+    "confirmKeepLocal": "내 버전을 클라우드에 업로드합니다. 이전 클라우드 버전은 저장소 기록에서 복구할 수 있습니다.",
+    "confirmKeepCloud": "클라우드로 내 버전을 교체합니다. 로컬 변경 사항은 손실되며 복구할 수 없습니다.",
+    "confirmBtn": "예, 계속",
+    "showDiff": "차이점 표시",
+    "hideDiff": "차이점 숨기기",
+    "myChanges": "내 편집",
+    "cloudChanges": "클라우드 편집",
+    "legendLocalDel": "이전",
+    "legendLocalAdd": "변경됨",
+    "legendRemoteDel": "이전",
+    "legendRemoteAdd": "클라우드에서 변경됨"
+  },
+  "backup": {
+    "restore": "이전 상태로 복원",
+    "confirmRestore": "이전 상태로 복원하시겠습니까? 현재 데이터가 교체됩니다.",
+    "confirmUndo": "마지막 동기화를 취소하시겠습니까? 이전 데이터가 복원됩니다.",
+    "restored": "복원 성공",
+    "restoreFailed": "복원 실패",
+    "undo": "실행 취소"
+  },
+  "settings": {
+    "title": "설정",
+    "gitSync": "GitHub 동기화",
+    "repository": "GitHub 저장소",
+    "repositoryPlaceholder": "user/repo 또는 GitHub URL 붙여넣기",
+    "connectVia": "연결 방법",
+    "testConnection": "연결 테스트",
+    "createRepo": "저장소 생성",
+    "openOnGitHub": "GitHub에서 열기",
+    "creating": "생성 중...",
+    "testing": "테스트 중...",
+    "connectionSuccess": "연결 성공!",
+    "connectionFailed": "연결 실패",
+    "dataManagement": "데이터 관리",
+    "restoreExamples": "예제 복원",
+    "clearExamples": "예제 지우기",
+    "restoreHint": "<strong>예제 복원:</strong> 기능 탐색을 위한 예제 작업과 노트 로드",
+    "clearHint": "<strong>예제 지우기:</strong> 새로 시작하기 위해 예제 작업과 노트 제거",
+    "clearExamplesTitle": "예제 데이터 지우기",
+    "close": "닫기",
+    "save": "저장",
+    "notConfigured": "구성되지 않음",
+    "username": "사용자 이름",
+    "usernameHint": "댓글 및 귀속에 사용",
+    "usernamePlaceholder": "이름",
+    "language": "언어",
+    "languageHint": "선호하는 언어 선택",
+    "showSections": "섹션 표시",
+    "showSectionsHint": "최소 하나는 활성화해야 합니다"
+  },
+  "task": {
+    "new": "새 작업",
+    "edit": "작업 편집",
+    "title": "제목",
+    "titlePlaceholder": "작업 제목",
+    "description": "설명 (선택사항, 마크다운 지원)",
+    "descPlaceholder": "상세, 사용자 스토리, 메모...",
+    "tags": "태그",
+    "tagsPlaceholder": "태그를 입력하고 Enter 또는 쉼표 누르기",
+    "pasteHint": "Ctrl+V로 이미지 직접 붙여넣기",
+    "cancel": "취소",
+    "save": "저장",
+    "addTask": "+ 작업 추가",
+    "addSubtask": "하위 작업 추가",
+    "newSubtaskOf": "T{{id}}의 새 하위 작업",
+    "subtasks": "하위 작업",
+    "subtasksCount": "{{count}}개 하위 작업",
+    "noSubtasks": "하위 작업 없음",
+    "add": "+ 추가",
+    "noDescription": "설명 없음",
+    "created": "생성일:",
+    "modified": "수정일:",
+    "backlog": "백로그",
+    "restore": "복원",
+    "delete": "삭제",
+    "edit_btn": "편집",
+    "close": "닫기",
+    "taskNotFound": "작업을 찾을 수 없음",
+    "subtaskOf": "상위 작업:"
+  },
+  "columns": {
+    "todo": "할 일",
+    "doing": "진행 중",
+    "review": "검토 대기",
+    "done": "완료"
+  },
+  "backlog": {
+    "title": "백로그",
+    "restore": "할 일로 복원",
+    "delete": "삭제"
+  },
+  "trash": {
+    "title": "휴지통",
+    "empty": "비우기",
+    "emptyConfirm": "휴지통을 비우시겠습니까? {{count}}개 작업이 영구 삭제됩니다.",
+    "permanentDelete": "영구 삭제",
+    "permanentDeleteConfirm": "이 작업을 영구 삭제하시겠습니까? 취소할 수 없습니다."
+  },
+  "comments": {
+    "title": "댓글",
+    "titleCount": "댓글 ({{count}})",
+    "placeholder": "댓글 작성 (마크다운 지원)...",
+    "send": "보내기",
+    "deleteConfirm": "이 댓글을 삭제하시겠습니까?"
+  },
+  "notes": {
+    "title": "노트",
+    "new": "새 노트",
+    "select": "노트 선택",
+    "titlePlaceholder": "노트 제목",
+    "contentPlaceholder": "마크다운 내용...",
+    "edit": "편집",
+    "addChild": "+ 하위 노트",
+    "delete": "삭제",
+    "deleteConfirm": "이 노트와 모든 하위 노트를 삭제하시겠습니까?",
+    "noteNotFound": "노트를 찾을 수 없음"
+  },
+  "confirm": {
+    "clearAllData": "모든 작업, 노트, 이미지를 삭제하시겠습니까?\n\n취소할 수 없습니다!",
+    "clearExamples": "예제 작업과 노트를 제거하시겠습니까?\n\n사용자 콘텐츠는 유지됩니다.",
+    "restoreExamples": "현재 모든 데이터를 예제 작업과 노트로 교체합니다.\n\n계속하시겠습니까?",
+    "reloadExamples": "언어가 변경되었습니다. 새 언어로 예제 작업과 노트를 다시 로드하시겠습니까?\n\n현재 모든 데이터가 교체됩니다."
+  },
+  "prompt": {
+    "subtasksMove": "이 작업에 {{count}}개의 하위 작업이 있습니다.\n\n입력하세요:\n  \"all\" - 작업과 하위 작업을 백로그로 이동\n  \"only\" - 이 작업만 이동 (하위 작업은 고아가 됨)\n  \"cancel\" - 아무것도 하지 않음",
+    "subtasksDelete": "이 작업에 {{count}}개의 하위 작업이 있습니다.\n\n입력하세요:\n  \"all\" - 작업과 하위 작업 삭제\n  \"only\" - 이 작업만 삭제 (하위 작업은 고아가 됨)\n  \"cancel\" - 아무것도 하지 않음",
+    "subtasksRestore": "이 작업의 {{count}}개 하위 작업이 {{location}}에 있습니다.\n\n입력하세요:\n  \"all\" - 작업과 하위 작업 복원\n  \"only\" - 이 작업만 복원\n  \"cancel\" - 아무것도 하지 않음",
+    "subtasksPermanent": "이 작업의 {{count}}개 하위 작업이 휴지통에 있습니다.\n\n입력하세요:\n  \"all\" - 작업과 하위 작업 영구 삭제\n  \"only\" - 이 작업만 삭제\n  \"cancel\" - 아무것도 하지 않음",
+    "defaultAll": "all",
+    "backlog": "백로그",
+    "theTrash": "휴지통"
+  },
+  "xref": {
+    "taskNotFound": "작업을 찾을 수 없음",
+    "noteNotFound": "노트를 찾을 수 없음"
+  },
+  "filter": {
+    "title": "태그로 필터",
+    "active": "활성",
+    "clear": "지우기",
+    "manageGroups": "태그 그룹 관리",
+    "any": "하나라도",
+    "all": "모두",
+    "noGroups": "태그 그룹이 없습니다. 태그를 정리하려면 그룹을 만드세요.",
+    "groupName": "그룹 이름",
+    "addGroup": "그룹 추가",
+    "untitledGroup": "제목 없음",
+    "dropHere": "여기에 태그 놓기"
+  },
+  "readme": {
+    "title": "Kanbito 데이터",
+    "intro": "이 저장소에는 [Kanbito](https://github.com/vfmatzkin/kanbito) 데이터가 포함되어 있습니다.",
+    "filesTitle": "파일",
+    "filesBoard": "`board.json` - 작업 메타데이터 (열, 작업 목록, 백로그, 휴지통)",
+    "filesNotes": "`notes.json` - 노트 메타데이터 (트리 구조)",
+    "filesTasks": "`tasks/` - 마크다운 작업 설명 (T1.md, T2.md, ...)",
+    "filesNotesDir": "`notes/` - 마크다운 노트 내용 (N1.md, N2.md, ...)",
+    "filesImages": "`images/` - 첨부 이미지",
+    "filesSettings": "`.kanbito.json` - 앱 설정 (git 동기화 구성, 언어, 사용자 이름)",
+    "restoreTitle": "이전 버전 복원",
+    "restoreIntro": "데이터를 이전 상태로 복원해야 하는 경우:",
+    "option1Title": "옵션 1: GitHub 웹 인터페이스 사용",
+    "option1Steps": "1. GitHub에서 저장소로 이동\n2. \"Commits\"를 클릭하여 기록 보기\n3. 복원하려는 커밋 찾기\n4. 커밋 해시 클릭 후 \"Browse files\" 클릭\n5. 필요한 파일 다운로드 (board.json, notes.json 등)\n6. Kanbito 데이터 폴더의 파일 교체",
+    "option2Title": "옵션 2: Git 명령어 사용",
+    "option2Code": "# 커밋 기록 보기\ngit log --oneline\n\n# 특정 커밋으로 복원 (COMMIT_HASH 교체)\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# 또는 특정 커밋으로 모두 복원\ngit reset --hard COMMIT_HASH",
+    "option3Title": "옵션 3: GitHub의 \"Restore\" 기능 사용",
+    "option3Steps": "1. GitHub에서 저장소로 이동\n2. \"Commits\" 클릭\n3. 원하지 않는 변경 전 커밋 찾기\n4. \"...\" → \"Revert changes in this commit\" 클릭 (새 커밋 생성)",
+    "note": "`.kanbito-backup/` 폴더 (있는 경우)는 로컬 전용이며 GitHub에 동기화되지 않습니다."
+  },
+  "examples": {
+    "clearHint": "이것은 예제 작업입니다. 클릭하여 새로 시작하세요!",
+    "tagGroups": [
+      {
+        "id": "type",
+        "name": "유형",
+        "tags": [
+          "버그",
+          "아이디어"
+        ]
+      },
+      {
+        "id": "area",
+        "name": "영역",
+        "tags": [
+          "업무",
+          "개인"
+        ]
+      },
+      {
+        "id": "when",
+        "name": "언제",
+        "tags": [
+          "오늘",
+          "이번주",
+          "언젠가"
+        ]
+      }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Kanbito에 오신 것을 환영합니다!",
+        "tags": [
+          "가이드"
+        ],
+        "comment": "마크다운을 지원하는 **댓글**입니다!\n\n다른 작업 [[T2]]이나 노트 [[N1]]을 참조할 수 있습니다.",
+        "description": "## Kanbito에 오신 것을 환영합니다!\n\n개인용 **칸반 보드**입니다. 할 수 있는 것:\n\n- 열 사이로 작업 **드래그 앤 드롭**\n- **태그 추가**로 작업 정리 및 필터\n- 설명과 댓글에서 **마크다운 사용**\n- `[[T2]]`로 작업, `[[N1]]`로 노트 **링크**\n\n### 다음 기능을 사용해 보세요:\n1. **필터 버튼** (우측 하단)을 클릭하여 태그로 필터\n2. 작업에 마우스를 올리고 **+**를 클릭하여 하위 작업 추가\n3. **⚙️**를 클릭하여 GitHub 동기화 활성화\n\n[[T2]]에서 태그 필터링에 대해 알아보세요!"
+      },
+      "2": {
+        "title": "작업 필터링 해보기",
+        "tags": [
+          "가이드",
+          "오늘"
+        ],
+        "description": "## 태그로 필터하는 방법\n\nKanbito에서는 **태그 그룹**을 사용하여 작업을 필터할 수 있습니다. 지금 시도해 보세요:\n\n1. 우측 하단의 **필터 버튼** 클릭\n2. 3개의 예제 그룹이 표시됩니다:\n   - **유형**: 버그, 아이디어\n   - **영역**: 업무, 개인\n   - **언제**: 오늘, 이번주, 언젠가\n\n### 작동 방식:\n- 태그를 클릭하여 보드 필터\n- 같은 그룹의 태그는 **OR** 로직 (하나라도 일치)\n- 그룹 간 태그는 **AND** 로직 (모두 일치 필요)\n\n### 그룹 커스터마이즈:\n\"태그 그룹 관리\"를 클릭하여 나만의 정리 시스템 만들기!\n\n> `업무`로 필터하여 업무 관련 작업만 보세요."
+      },
+      "3": {
+        "title": "로그인 페이지 오타 수정",
+        "tags": [
+          "버그",
+          "업무",
+          "오늘"
+        ],
+        "description": "로그인 페이지에 수정이 필요한 오타가 있습니다.\n\n**위치:** `src/pages/Login.tsx`\n\n- [ ] 오타 찾기\n- [ ] 수정하기\n- [ ] 페이지 테스트"
+      },
+      "4": {
+        "title": "다크 모드 토글 추가",
+        "tags": [
+          "아이디어",
+          "업무",
+          "이번주"
+        ],
+        "description": "사용자들이 다크 모드 옵션을 요청했습니다.\n\n### 요구사항:\n- 설정에서 토글\n- 설정 유지\n- 시스템 설정 감지\n\n### 메모:\n[[N2]]에서 더 많은 프로젝트 아이디어를 확인하세요."
+      },
+      "5": {
+        "title": "주말 여행 계획",
+        "tags": [
+          "개인",
+          "이번주"
+        ],
+        "description": "주말 여행을 계획합니다.\n\n- [ ] 목적지 선택\n- [ ] 숙소 예약\n- [ ] 활동 계획"
+      },
+      "6": {
+        "title": "문서 업데이트",
+        "tags": [
+          "업무"
+        ],
+        "description": "최신 API 변경사항으로 문서가 업데이트되었습니다."
+      },
+      "7": {
+        "title": "새로운 언어 배우기",
+        "tags": [
+          "개인",
+          "언젠가"
+        ],
+        "description": "새로운 프로그래밍 언어나 외국어를 배웁니다.\n\n아이디어:\n- Rust\n- Go\n- 일본어"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "노트에 오신 것을 환영합니다",
+        "content": "# 노트에 오신 것을 환영합니다\n\n노트는 문서, 아이디어, 긴 콘텐츠에 적합합니다.\n\n## 기능\n\n- **계층 구조** - 중첩된 하위 노트 생성\n- **마크다운 지원** - 완전한 서식 지정\n- **교차 참조** - `[[T1]]`로 작업에 링크\n- **드래그 앤 드롭** - 노트 재정리\n\n## 시작하기\n\n**+** 버튼을 클릭하여 새 노트를 만드세요. 사이드바를 사용하여 탐색하세요."
+      },
+      "2": {
+        "title": "프로젝트 아이디어",
+        "content": "# 프로젝트 아이디어\n\n브레인스토밍과 아이디어 수집 장소.\n\n## 구현할 기능\n- [ ] 다크 모드\n- [ ] PDF 내보내기\n- [ ] 모바일 앱\n\n## 조사\n- 경쟁사 기능 확인\n- 사용자 피드백 주제\n\n---\n*여기에 나만의 아이디어를 추가하세요!*"
+      },
+      "3": {
+        "title": "빠른 참조",
+        "content": "# 빠른 참조\n\n## 키보드 단축키\n- `Esc` - 대화 상자 닫기\n- `Ctrl+Enter` - 노트/댓글 저장\n\n## 교차 참조\n- `[[T5]]` → 작업 5에 링크\n- `[[N2]]` → 노트 2에 링크\n\n## 이미지\n`Ctrl+V`로 이미지 직접 붙여넣기"
+      }
+    }
+  }
+}

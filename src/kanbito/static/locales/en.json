@@ -1,0 +1,293 @@
+{
+  "welcome": {
+    "title": "Welcome to Kanbito!",
+    "whatWillYouUse": "What will you use Kanbito for?",
+    "both": "Both",
+    "bothDesc": "Tasks board + Notes",
+    "boardOnly": "Board only",
+    "boardOnlyDesc": "Kanban task management",
+    "notesOnly": "Notes only",
+    "notesOnlyDesc": "Markdown documentation",
+    "almostReady": "Almost ready!",
+    "setupPrefs": "Set up your preferences",
+    "yourName": "Your name",
+    "yourNamePlaceholder": "Enter your name",
+    "dataFolder": "Data folder",
+    "dataFolderHint": "Where your tasks and notes are saved",
+    "gitRepo": "Sync with GitHub (optional)",
+    "gitRepoPlaceholder": "user/repo (uses SSH) or full URL",
+    "gitRepoHint": "Clone an existing Kanbito repo to sync across devices",
+    "cloneSuccess": "Repository cloned successfully!",
+    "folderNotEmpty": "The selected folder is not empty. Do you want to clear it and start fresh?",
+    "folderNotEmptyClone": "The folder will be cleared and the repository will be cloned. Continue?",
+    "connectVia": "Connect via",
+    "noIdentities": "No GitHub identities found - run 'gh auth login' first",
+    "back": "Back",
+    "getStarted": "Get Started",
+    "changeInSettings": "You can change this later in Settings"
+  },
+  "app": {
+    "name": "Kanbito",
+    "board": "Board",
+    "notes": "Notes"
+  },
+  "user": {
+    "change": "Change username:",
+    "anonymous": "Anonymous"
+  },
+  "save": {
+    "saving": "Saving...",
+    "saved": "Saved",
+    "error": "Error saving"
+  },
+  "git": {
+    "sync": "Sync",
+    "syncing": "Syncing...",
+    "noRepo": "No repo",
+    "upToDate": "✓",
+    "unsaved": "{{count}} unsaved",
+    "available": "↓ {{count}} available",
+    "syncNeeded": "↕ Sync needed",
+    "syncFailed": "Sync failed"
+  },
+  "conflict": {
+    "title": "Sync Conflict",
+    "description": "Your changes and cloud changes overlap. What would you like to do?",
+    "keepLocal": "Keep yours",
+    "keepLocalDesc": "Upload your version to the cloud",
+    "keepCloud": "Keep cloud",
+    "keepCloudDesc": "Discard your changes",
+    "keepCloudBackup": "Keep cloud + backup",
+    "keepCloudBackupDesc": "Download cloud version, your changes are saved (use Undo to restore)",
+    "decideLater": "Decide later",
+    "recommended": "Recommended",
+    "confirmKeepLocal": "This will upload your version to the cloud. The previous cloud version can still be recovered from the repository history.",
+    "confirmKeepCloud": "This will replace your version with the cloud. Your local changes will be lost and cannot be recovered.",
+    "confirmBtn": "Yes, continue",
+    "showDiff": "Show differences",
+    "hideDiff": "Hide differences",
+    "myChanges": "Your edits",
+    "cloudChanges": "Cloud edits",
+    "legendLocalDel": "Was",
+    "legendLocalAdd": "You changed to",
+    "legendRemoteDel": "Was",
+    "legendRemoteAdd": "Changed to in cloud"
+  },
+  "backup": {
+    "restore": "Restore previous state",
+    "confirmRestore": "Restore to previous state? This will replace your current data.",
+    "confirmUndo": "Undo the last sync? This will restore your previous data.",
+    "restored": "Restored successfully",
+    "restoreFailed": "Restore failed",
+    "undo": "Undo"
+  },
+  "settings": {
+    "title": "Settings",
+    "gitSync": "GitHub Sync",
+    "repository": "GitHub Repository",
+    "repositoryPlaceholder": "user/repo or paste GitHub URL",
+    "connectVia": "Connect via",
+    "testConnection": "Test Connection",
+    "createRepo": "Create Repository",
+    "openOnGitHub": "Open on GitHub",
+    "creating": "Creating...",
+    "testing": "Testing...",
+    "connectionSuccess": "Connection successful!",
+    "connectionFailed": "Connection failed",
+        "dataManagement": "Data Management",
+    "restoreExamples": "Restore Examples",
+    "clearExamples": "Clear Examples",
+    "restoreHint": "<strong>Restore Examples:</strong> Load example tasks and notes to explore features",
+    "clearHint": "<strong>Clear Examples:</strong> Remove example tasks and notes to start fresh",
+    "clearExamplesTitle": "Clear example data",
+    "close": "Close",
+    "save": "Save",
+    "notConfigured": "Not configured",
+    "username": "Username",
+    "usernameHint": "Used for comments and attributions",
+    "usernamePlaceholder": "Your name",
+    "language": "Language",
+    "languageHint": "Select your preferred language",
+    "showSections": "Show sections",
+    "showSectionsHint": "At least one must be enabled"
+  },
+  "task": {
+    "new": "New task",
+    "edit": "Edit task",
+    "title": "Title",
+    "titlePlaceholder": "Task title",
+    "description": "Description (optional, supports Markdown)",
+    "descPlaceholder": "Details, user story, notes...",
+    "tags": "Tags",
+    "tagsPlaceholder": "Type a tag and press Enter or comma",
+    "pasteHint": "Paste images directly with Ctrl+V",
+    "cancel": "Cancel",
+    "save": "Save",
+    "addTask": "+ Add task",
+    "addSubtask": "Add subtask",
+    "newSubtaskOf": "New subtask of T{{id}}",
+    "subtasks": "Subtasks",
+    "subtasksCount": "{{count}} subtask(s)",
+    "noSubtasks": "No subtasks",
+    "add": "+ Add",
+    "noDescription": "No description",
+    "created": "Created:",
+    "modified": "Modified:",
+    "backlog": "Backlog",
+    "restore": "Restore",
+    "delete": "Delete",
+    "edit_btn": "Edit",
+    "close": "Close",
+    "taskNotFound": "Task not found",
+    "subtaskOf": "Subtask of:"
+  },
+  "columns": {
+    "todo": "To Do",
+    "doing": "In Progress",
+    "review": "Pending Review",
+    "done": "Done"
+  },
+  "backlog": {
+    "title": "Backlog",
+    "restore": "Restore to To Do",
+    "delete": "Delete"
+  },
+  "trash": {
+    "title": "Trash",
+    "empty": "Empty",
+    "emptyConfirm": "Empty trash? {{count}} task(s) will be permanently deleted.",
+    "permanentDelete": "Delete permanently",
+    "permanentDeleteConfirm": "Permanently delete this task? This cannot be undone."
+  },
+  "comments": {
+    "title": "Comments",
+    "titleCount": "Comments ({{count}})",
+    "placeholder": "Write a comment (supports Markdown)...",
+    "send": "Send",
+    "deleteConfirm": "Delete this comment?"
+  },
+  "notes": {
+    "title": "Notes",
+    "new": "New note",
+    "select": "Select a note",
+    "titlePlaceholder": "Note title",
+    "contentPlaceholder": "Content in Markdown...",
+    "edit": "Edit",
+    "addChild": "+ Sub-note",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this note and all its sub-notes?",
+    "noteNotFound": "Note not found"
+  },
+  "confirm": {
+    "clearAllData": "Are you sure you want to delete ALL tasks, notes, and images?\n\nThis cannot be undone!",
+    "clearExamples": "Remove example tasks and notes?\n\nYour own content will be kept.",
+    "restoreExamples": "This will replace all current data with example tasks and notes.\n\nContinue?",
+    "reloadExamples": "Language changed. Do you want to reload the example tasks and notes in the new language?\n\nThis will replace all current data."
+  },
+  "prompt": {
+    "subtasksMove": "This task has {{count}} subtask(s).\n\nType:\n  \"all\" - move task and subtasks to backlog\n  \"only\" - move only this task (subtasks become orphans)\n  \"cancel\" - do nothing",
+    "subtasksDelete": "This task has {{count}} subtask(s).\n\nType:\n  \"all\" - delete task and subtasks\n  \"only\" - delete only this task (subtasks become orphans)\n  \"cancel\" - do nothing",
+    "subtasksRestore": "This task has {{count}} subtask(s) in {{location}}.\n\nType:\n  \"all\" - restore task and subtasks\n  \"only\" - restore only this task\n  \"cancel\" - do nothing",
+    "subtasksPermanent": "This task has {{count}} subtask(s) in trash.\n\nType:\n  \"all\" - permanently delete task and subtasks\n  \"only\" - delete only this task\n  \"cancel\" - do nothing",
+    "defaultAll": "all",
+    "backlog": "backlog",
+    "theTrash": "trash"
+  },
+  "xref": {
+    "taskNotFound": "Task not found",
+    "noteNotFound": "Note not found"
+  },
+  "filter": {
+    "title": "Filter by tags",
+    "active": "active",
+    "clear": "Clear",
+    "manageGroups": "Manage tag groups",
+    "any": "Any",
+    "all": "All",
+    "noGroups": "No tag groups yet. Create one to organize your tags.",
+    "groupName": "Group name",
+    "addGroup": "Add Group",
+    "untitledGroup": "Untitled",
+    "dropHere": "Drop tags here"
+  },
+  "readme": {
+    "title": "Kanbito Data",
+    "intro": "This repository contains data from [Kanbito](https://github.com/vfmatzkin/kanbito), a personal Kanban board app.",
+    "filesTitle": "Files",
+    "filesBoard": "`board.json` - Task metadata (columns, task list, backlog, trash)",
+    "filesNotes": "`notes.json` - Notes metadata (tree structure)",
+    "filesTasks": "`tasks/` - Task descriptions in Markdown (T1.md, T2.md, ...)",
+    "filesNotesDir": "`notes/` - Note content in Markdown (N1.md, N2.md, ...)",
+    "filesImages": "`images/` - Attached images",
+    "filesSettings": "`.kanbito.json` - App settings (git sync config, language, username)",
+    "restoreTitle": "Restoring a Previous Version",
+    "restoreIntro": "If you need to restore your data to a previous state:",
+    "option1Title": "Option 1: Using GitHub Web Interface",
+    "option1Steps": "1. Go to your repository on GitHub\n2. Click on \"Commits\" to see the history\n3. Find the commit you want to restore to\n4. Click the commit hash, then click \"Browse files\"\n5. Download the files you need (board.json, notes.json, etc.)\n6. Replace the files in your Kanbito data folder",
+    "option2Title": "Option 2: Using Git Commands",
+    "option2Code": "# See commit history\ngit log --oneline\n\n# Restore to a specific commit (replace COMMIT_HASH)\ngit checkout COMMIT_HASH -- board.json notes.json tasks/ notes/\n\n# Or restore everything to a specific commit\ngit reset --hard COMMIT_HASH",
+    "option3Title": "Option 3: Using GitHub's \"Restore\" Feature",
+    "option3Steps": "1. Go to your repository on GitHub\n2. Click on \"Commits\"\n3. Find the commit before the unwanted change\n4. Click \"...\" → \"Revert changes in this commit\" (creates a new commit)",
+    "note": "The `.kanbito-backup/` folder (if present) is local only and not synced to GitHub."
+  },
+  "examples": {
+    "clearHint": "These are example tasks. Click to start fresh!",
+    "tagGroups": [
+      { "id": "type", "name": "Type", "tags": ["bug", "idea"] },
+      { "id": "area", "name": "Area", "tags": ["work", "personal"] },
+      { "id": "when", "name": "When", "tags": ["today", "this-week", "someday"] }
+    ],
+    "tasks": {
+      "1": {
+        "title": "Welcome to Kanbito!",
+        "tags": ["guide"],
+        "comment": "This is a **comment** with Markdown support!\n\nYou can reference other tasks like [[T2]] or notes like [[N1]].",
+        "description": "## Welcome to Kanbito!\n\nThis is your personal **Kanban board**. Here's what you can do:\n\n- **Drag & drop** tasks between columns\n- **Add tags** to organize and filter tasks\n- **Use Markdown** in descriptions and comments\n- **Link tasks** with `[[T2]]` or notes with `[[N1]]`\n\n### Try these features:\n1. Click the **filter button** (bottom-right) to filter by tags\n2. Hover over a task and click **+** to add subtasks\n3. Click **⚙️** to enable GitHub sync\n\nSee [[T2]] to learn about tag filtering!"
+      },
+      "2": {
+        "title": "Try filtering your tasks",
+        "tags": ["guide", "today"],
+        "description": "## Learn to filter by tags\n\nKanbito lets you filter tasks using **tag groups**. Try it now:\n\n1. Click the **filter button** in the bottom-right corner\n2. You'll see 3 example groups:\n   - **Type**: bug, idea\n   - **Area**: work, personal\n   - **When**: today, this-week, someday\n\n### How it works:\n- Click a tag to filter the board\n- Tags in the same group use **OR** logic (show any match)\n- Tags across groups use **AND** logic (must match all)\n\n### Customize your groups:\nClick \"Manage tag groups\" to create your own organization system!\n\n> Try filtering by `work` to see only work-related tasks."
+      },
+      "3": {
+        "title": "Fix login page typo",
+        "tags": ["bug", "work", "today"],
+        "description": "There's a typo on the login page that needs fixing.\n\n**Location:** `src/pages/Login.tsx`\n\n- [ ] Find the typo\n- [ ] Fix it\n- [ ] Test the page"
+      },
+      "4": {
+        "title": "Add dark mode toggle",
+        "tags": ["idea", "work", "this-week"],
+        "description": "Users have requested a dark mode option.\n\n### Requirements:\n- Toggle in settings\n- Persist preference\n- System preference detection\n\n### Notes:\nCheck [[N2]] for more project ideas."
+      },
+      "5": {
+        "title": "Plan weekend trip",
+        "tags": ["personal", "this-week"],
+        "description": "Plan a weekend getaway.\n\n- [ ] Choose destination\n- [ ] Book accommodation\n- [ ] Plan activities"
+      },
+      "6": {
+        "title": "Update documentation",
+        "tags": ["work"],
+        "description": "Documentation has been updated with the latest API changes."
+      },
+      "7": {
+        "title": "Learn a new language",
+        "tags": ["personal", "someday"],
+        "description": "Pick up a new programming language or spoken language.\n\nIdeas:\n- Rust\n- Go\n- Japanese"
+      }
+    },
+    "notes": {
+      "1": {
+        "title": "Welcome to Notes",
+        "content": "# Welcome to Notes\n\nNotes are perfect for documentation, ideas, and longer content.\n\n## Features\n\n- **Hierarchical structure** - Create nested sub-notes\n- **Markdown support** - Full formatting\n- **Cross-references** - Link to tasks with `[[T1]]`\n- **Drag & drop** - Reorganize your notes\n\n## Getting started\n\nClick the **+** button to create new notes. Use the sidebar to navigate."
+      },
+      "2": {
+        "title": "Project Ideas",
+        "content": "# Project Ideas\n\nA place to brainstorm and collect ideas.\n\n## Features to build\n- [ ] Dark mode\n- [ ] Export to PDF\n- [ ] Mobile app\n\n## Research\n- Check competitor features\n- User feedback themes\n\n---\n*Add your own ideas here!*"
+      },
+      "3": {
+        "title": "Quick Reference",
+        "content": "# Quick Reference\n\n## Keyboard shortcuts\n- `Esc` - Close dialogs\n- `Ctrl+Enter` - Save note/comment\n\n## Cross-references\n- `[[T5]]` → Links to task 5\n- `[[N2]]` → Links to note 2\n\n## Images\nPaste images directly with `Ctrl+V`"
+      }
+    }
+  }
+}
