@@ -88,6 +88,11 @@ def run_command(cmd: list[str], env_extra: dict | None = None, timeout: int = 30
                 # Current directory was deleted, fall back to home
                 cwd = Path.home()
 
+        # On Windows, suppress visible console windows for subprocesses
+        creationflags = 0
+        if os.name == 'nt':
+            creationflags = subprocess.CREATE_NO_WINDOW
+
         result = subprocess.run(
             cmd,
             capture_output=True,
@@ -95,7 +100,8 @@ def run_command(cmd: list[str], env_extra: dict | None = None, timeout: int = 30
             cwd=str(cwd),
             env=env,
             timeout=timeout,
-            stdin=subprocess.DEVNULL  # Prevent hanging on input prompts
+            stdin=subprocess.DEVNULL,  # Prevent hanging on input prompts
+            creationflags=creationflags  # Hide console window on Windows
         )
         return result.returncode, result.stdout.strip(), result.stderr.strip()
     except FileNotFoundError:
@@ -1407,6 +1413,7 @@ def register_routes(app: Flask):
 
         try:
             # Run from home directory to avoid issues if cwd was deleted
+            creationflags = subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0
             result = subprocess.run(
                 ["git", "clone", clone_url, str(target_path)],
                 capture_output=True,
@@ -1414,7 +1421,8 @@ def register_routes(app: Flask):
                 timeout=120,
                 env=env,
                 stdin=subprocess.DEVNULL,
-                cwd=str(Path.home())
+                cwd=str(Path.home()),
+                creationflags=creationflags  # Hide console window on Windows
             )
 
             if result.returncode == 0:

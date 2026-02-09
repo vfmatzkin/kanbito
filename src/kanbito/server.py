@@ -1161,7 +1161,21 @@ def favicon():
 
 
 def has_example_data() -> bool:
-    """Check if example tasks or notes exist in current data."""
+    """Check if example tasks or notes exist in current data.
+    
+    Only returns True if:
+    1. Not in a git repo (i.e., not a cloned/synced setup)
+    2. AND example task/note IDs are present
+    
+    This prevents showing "clear examples" button on cloned data
+    where IDs 1-7 might be legitimate user content.
+    """
+    # If in a git repo, don't show clear examples button
+    # (it's a cloned/synced repo, not a fresh example install)
+    from .git_sync import is_git_repo
+    if is_git_repo():
+        return False
+
     # Check for example task IDs (1-7)
     board_path = get_board_path()
     if board_path.exists():

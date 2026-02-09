@@ -1951,7 +1951,7 @@ async function saveGitSettings() {
   if (newUsername !== currentUser) {
     currentUser = newUsername;
     localStorage.setItem('kanban_user', newUsername);
-    updateUserBadge();
+    renderUserBadge();
     // Also save to server settings
     await fetch('/api/settings', {
       method: 'POST',
