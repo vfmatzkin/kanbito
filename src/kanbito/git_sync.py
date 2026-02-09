@@ -1280,10 +1280,38 @@ def register_routes(app: Flask):
         # Clear folder if requested
         if clear_folder and target_path.exists():
             try:
-                shutil.rmtree(target_path)
+                # If the target is the current data directory, avoid removing the
+                # directory itself (Windows will often lock the current working dir).
+                current_data = None
+                try:
+                    current_data = get_data_dir().resolve()
+                except Exception:
+                    current_data = None
+
+                if current_data is not None and target_path.resolve() == current_data:
+                    # Change cwd temporarily to avoid trying to remove our working dir
+                    old_cwd = Path.cwd()
+                    try:
+                        os.chdir(Path.home())
+                        # Remove contents but keep the directory itself
+                        for child in list(target_path.iterdir()):
+                            try:
+                                if child.is_dir():
+                                    shutil.rmtree(child)
+                                else:
+                                    child.unlink()
+                            except Exception as e:
+                                raise
+                    finally:
+                        try:
+                            os.chdir(old_cwd)
+                        except Exception:
+                            pass
+                else:
+                    shutil.rmtree(target_path)
             except Exception as e:
                 return Response(
-                    json.dumps({"ok": False, "error": f"Failed to clear folder: {e}"}),
+                    json.dumps({"ok": False, "error": f"Failed to clear folder: {e}\nTip: Close other apps that may be using the folder, or choose a different target directory."}),
                     status=500,
                     content_type="application/json"
                 )
