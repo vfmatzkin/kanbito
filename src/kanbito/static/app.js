@@ -596,8 +596,21 @@ async function initUser() {
     currentUser = localStorage.getItem('kanban_user') || '';
   }
 
-  // Show welcome modal if still not set (first launch)
+  // Show welcome modal only if:
+  // 1. No username is set AND
+  // 2. No existing data (truly first launch)
   if (!currentUser) {
+    // Check if board has existing data (not empty)
+    const hasExistingData = board.tasks && board.tasks.length > 0;
+    
+    if (hasExistingData) {
+      // User has existing data, just render without welcome modal
+      // They can set their username later from settings
+      renderUserBadge();
+      return;
+    }
+    
+    // No existing data = true first launch, show welcome
     showWelcomeModal();
     return; // Don't render badge yet, wait for welcome completion
   }
