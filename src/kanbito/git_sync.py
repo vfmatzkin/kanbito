@@ -88,6 +88,11 @@ def run_command(cmd: list[str], env_extra: dict | None = None, timeout: int = 30
                 # Current directory was deleted, fall back to home
                 cwd = Path.home()
 
+        # On Windows, suppress visible console windows for subprocesses
+        creationflags = 0
+        if os.name == 'nt':
+            creationflags = subprocess.CREATE_NO_WINDOW
+
         result = subprocess.run(
             cmd,
             capture_output=True,
@@ -95,7 +100,8 @@ def run_command(cmd: list[str], env_extra: dict | None = None, timeout: int = 30
             cwd=str(cwd),
             env=env,
             timeout=timeout,
-            stdin=subprocess.DEVNULL  # Prevent hanging on input prompts
+            stdin=subprocess.DEVNULL,  # Prevent hanging on input prompts
+            creationflags=creationflags  # Hide console window on Windows
         )
         return result.returncode, result.stdout.strip(), result.stderr.strip()
     except FileNotFoundError:
@@ -111,13 +117,28 @@ def run_git(*args: str) -> tuple[int, str, str]:
 
 def run_gh(*args: str, as_user: str = None) -> tuple[int, str, str]:
     """Run a gh CLI command, optionally as a specific authenticated user."""
+    # Locate gh executable (may not be in PATH on Windows)
+    gh_cmd = "gh"
+    if os.name == 'nt':
+        # Check common Windows installation paths
+        common_paths = [
+            Path("C:\\Program Files\\GitHub CLI\\gh.exe"),
+            Path("C:\\Program Files (x86)\\GitHub CLI\\gh.exe"),
+            Path(os.path.expandvars("%PROGRAMFILES%\\GitHub CLI\\gh.exe")),
+            Path(os.path.expandvars("%PROGRAMFILES(x86)%\\GitHub CLI\\gh.exe")),
+        ]
+        for gh_exe in common_paths:
+            if gh_exe.exists():
+                gh_cmd = str(gh_exe)
+                break
+
     env_extra = None
     if as_user:
         # Get the token for the specific user
-        code, token, _ = run_command(["gh", "auth", "token", "-u", as_user], cwd=Path.home())
+        code, token, _ = run_command([gh_cmd, "auth", "token", "-u", as_user], cwd=Path.home())
         if code == 0 and token:
             env_extra = {"GH_TOKEN": token}
-    return run_command(["gh", *args], env_extra=env_extra, cwd=Path.home())
+    return run_command([gh_cmd, *args], env_extra=env_extra, cwd=Path.home())
 
 
 def is_git_installed() -> bool:
@@ -128,6 +149,28 @@ def is_git_installed() -> bool:
 
 def is_gh_installed() -> bool:
     """Check if gh CLI is installed."""
+    # On Windows, check common installation paths first (often not in PATH for subprocesses)
+    if os.name == 'nt':
+        common_paths = [
+            Path("C:\\Program Files\\GitHub CLI\\gh.exe"),
+            Path("C:\\Program Files (x86)\\GitHub CLI\\gh.exe"),
+            Path(os.path.expandvars("%PROGRAMFILES%\\GitHub CLI\\gh.exe")),
+            Path(os.path.expandvars("%PROGRAMFILES(x86)%\\GitHub CLI\\gh.exe")),
+        ]
+        for gh_exe in common_paths:
+            if gh_exe.exists():
+                return True
+
+    # Fallback: check if gh is in PATH
+    try:
+        import shutil
+        gh_path = shutil.which("gh")
+        if gh_path:
+            return True
+    except Exception:
+        pass
+
+    # Final fallback: try invoking gh --version directly (may be slow, but works)
     code, _, _ = run_gh("--version")
     return code == 0
 
@@ -483,25 +526,46 @@ def get_gh_accounts() -> list[dict]:
     # gh auth status shows all authenticated accounts
     code, stdout, stderr = run_gh("auth", "status")
 
-    # Parse output to find accounts
-    # Format: "  ✓ Logged in to github.com account username (keyring)"
-    output = stdout + "\n" + stderr
-    for line in output.split("\n"):
-        if "Logged in to" in line and "account" in line:
-            try:
-                # Extract username between "account" and "("
-                parts = line.split("account")
-                if len(parts) > 1:
-                    username_part = parts[1].strip()
-                    username = username_part.split()[0].strip("()")
-                    if username:
-                        accounts.append({
-                            "username": username,
-                            "host": "github.com",
-                            "label": f"@{username} (gh CLI)"
-                        })
-            except Exception:
-                pass
+    # Parse output to find accounts. Handle multiple gh output formats:
+    # - "Logged in to github.com account USERNAME (keyring)"  [most common]
+    # - "Logged in to github.com as USERNAME (token)"         [alt format]
+    # Handles UTF-8 checkmarks, non-breaking spaces, and encoding quirks.
+    import re
+
+    output = (stdout or "") + "\n" + (stderr or "")
+    for line in output.splitlines():
+        # Skip lines that don't contain account info
+        if "Logged in to" not in line:
+            continue
+
+        try:
+            # Clean up control characters that may appear before "Logged in"
+            # (e.g., checkmarks, color codes, non-breaking spaces)
+            line_clean = line.lstrip()
+
+            # PRIMARY: Match "Logged in to <host> account <username>" or "as <username>"
+            # This handles the most common output format across locales.
+            m = re.search(r'Logged in to\s+[^\s]+\s+(?:account|as)\s+([^\s(:\-\.\,]+)', line_clean, re.IGNORECASE)
+            if m:
+                username = m.group(1).strip("()")
+                if username:
+                    accounts.append({"username": username, "host": "github.com", "label": f"@{username} (gh CLI)"})
+                    continue
+
+            # FALLBACK: If the line has parentheses with account info,
+            # try to extract the username from within them.
+            # E.g., "github.com\n  Logged in ... account user (keyring)" -> extract "user"
+            # Or: "Logged in to github.com APBoitu (keyring)" (if format varies)
+            m2 = re.search(r'(?:account|as|to\s+[^\s]+)\s+([^\s(:\-\.\,]+)\s*\(', line_clean, re.IGNORECASE)
+            if m2:
+                username = m2.group(1).strip("()")
+                if username and username not in ("github.com",):  # Avoid matching hostnames
+                    accounts.append({"username": username, "host": "github.com", "label": f"@{username} (gh CLI)"})
+                    continue
+
+        except Exception:
+            # Be tolerant of unexpected output formats; log if needed
+            continue
 
     return accounts
 
@@ -1280,10 +1344,38 @@ def register_routes(app: Flask):
         # Clear folder if requested
         if clear_folder and target_path.exists():
             try:
-                shutil.rmtree(target_path)
+                # If the target is the current data directory, avoid removing the
+                # directory itself (Windows will often lock the current working dir).
+                current_data = None
+                try:
+                    current_data = get_data_dir().resolve()
+                except Exception:
+                    current_data = None
+
+                if current_data is not None and target_path.resolve() == current_data:
+                    # Change cwd temporarily to avoid trying to remove our working dir
+                    old_cwd = Path.cwd()
+                    try:
+                        os.chdir(Path.home())
+                        # Remove contents but keep the directory itself
+                        for child in list(target_path.iterdir()):
+                            try:
+                                if child.is_dir():
+                                    shutil.rmtree(child)
+                                else:
+                                    child.unlink()
+                            except Exception as e:
+                                raise
+                    finally:
+                        try:
+                            os.chdir(old_cwd)
+                        except Exception:
+                            pass
+                else:
+                    shutil.rmtree(target_path)
             except Exception as e:
                 return Response(
-                    json.dumps({"ok": False, "error": f"Failed to clear folder: {e}"}),
+                    json.dumps({"ok": False, "error": f"Failed to clear folder: {e}\nTip: Close other apps that may be using the folder, or choose a different target directory."}),
                     status=500,
                     content_type="application/json"
                 )
@@ -1295,7 +1387,21 @@ def register_routes(app: Flask):
         env_extra = {}
         if identity_type.startswith("gh:"):
             gh_user = identity_type.split(":", 1)[1]
-            code, token, _ = run_command(["gh", "auth", "token", "-u", gh_user])
+            # Locate gh executable (may not be in PATH on Windows)
+            gh_cmd = "gh"
+            if os.name == 'nt':
+                # Check common Windows installation paths
+                common_paths = [
+                    Path("C:\\Program Files\\GitHub CLI\\gh.exe"),
+                    Path("C:\\Program Files (x86)\\GitHub CLI\\gh.exe"),
+                    Path(os.path.expandvars("%PROGRAMFILES%\\GitHub CLI\\gh.exe")),
+                    Path(os.path.expandvars("%PROGRAMFILES(x86)%\\GitHub CLI\\gh.exe")),
+                ]
+                for gh_exe in common_paths:
+                    if gh_exe.exists():
+                        gh_cmd = str(gh_exe)
+                        break
+            code, token, _ = run_command([gh_cmd, "auth", "token", "-u", gh_user])
             if code == 0 and token:
                 env_extra = {"GH_TOKEN": token}
 
@@ -1307,6 +1413,7 @@ def register_routes(app: Flask):
 
         try:
             # Run from home directory to avoid issues if cwd was deleted
+            creationflags = subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0
             result = subprocess.run(
                 ["git", "clone", clone_url, str(target_path)],
                 capture_output=True,
@@ -1314,7 +1421,8 @@ def register_routes(app: Flask):
                 timeout=120,
                 env=env,
                 stdin=subprocess.DEVNULL,
-                cwd=str(Path.home())
+                cwd=str(Path.home()),
+                creationflags=creationflags  # Hide console window on Windows
             )
 
             if result.returncode == 0:

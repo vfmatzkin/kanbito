@@ -70,6 +70,32 @@ def build(project_root: Path, system: str) -> None:
     """Build the application using PyInstaller."""
     config = PLATFORM_CONFIG[system]
 
+    # Pre-cleanup: try to remove previous dist output to avoid locked files on Windows.
+    dist_target = project_root / "dist" / config["name"]
+    if dist_target.exists():
+        import time as _time
+        # On Windows, attempt to kill a running Kanbito.exe which commonly locks the file
+        if system == "Windows":
+            try:
+                exe_name = f"{config['name']}.exe"
+                # Try taskkill to force-stop any running instance
+                subprocess.run(["taskkill", "/F", "/IM", exe_name], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            except Exception:
+                pass
+
+        # Retry removal a few times (handles transient locks / antivirus scans)
+        for attempt in range(5):
+            try:
+                if dist_target.exists():
+                    shutil.rmtree(dist_target)
+                break
+            except Exception as e:
+                if attempt == 4:
+                    print(f"Warning: Failed to remove {dist_target}: {e}")
+                    print("Ensure no running Kanbito instances or other apps are holding files in the dist folder.")
+                else:
+                    _time.sleep(0.5)
+
     # Determine path separator for --add-data (semicolon on Windows, colon elsewhere)
     sep = ";" if system == "Windows" else ":"
     add_data = f"{STATIC_DATA}{sep}kanbito/static"

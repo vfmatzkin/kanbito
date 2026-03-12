@@ -388,7 +388,19 @@ def main():
         _window.events.minimized += on_minimized
 
     # Start the webview event loop (debug=True enables right-click inspect)
-    webview.start(debug=args.debug)
+    import platform as _platform
+
+    # Prefer Edge (WebView2) on Windows to avoid pythonnet/winforms import issues.
+    # Fall back to default if Edge is not available or startup fails.
+    gui_choice = None
+    if _platform.system() == 'Windows':
+        gui_choice = 'edgechromium'
+
+    try:
+        webview.start(debug=args.debug, gui=gui_choice)
+    except Exception as e:
+        print(f"webview.start failed with {e}; falling back to default GUI")
+        webview.start(debug=args.debug)
 
     # Clean up tray icon
     global _tray_icon

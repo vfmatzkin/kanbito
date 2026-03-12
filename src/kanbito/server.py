@@ -238,16 +238,32 @@ def ensure_dirs():
 
 
 def ensure_board_exists():
-    """Ensure board.json exists with example content on first run."""
-    from .git_sync import load_settings, save_settings
+    """Ensure board.json exists with example content on first run.
+    
+    Only creates examples on a true first launch (no git repo + no data files).
+    Does NOT create examples after a clone or git operation.
+    """
+    from .git_sync import load_settings, save_settings, is_git_repo
 
     board_path = get_board_path()
     notes_path = get_notes_path()
     lang = get_current_language()
     created_examples = False
 
-    # If board doesn't exist, create with examples
-    if not board_path.exists():
+    # Determine if this is a true first launch:
+    # - No git repo (user hasn't cloned or started one)
+    # - No board.json and no notes.json (no existing data)
+    in_git_repo = is_git_repo()
+    has_board = board_path.exists()
+    has_notes = notes_path.exists()
+    
+    # Only create examples if:
+    # 1. NOT in a git repo (not a cloned/synced setup)
+    # 2. AND neither board.json nor notes.json exist
+    should_create_examples = (not in_git_repo) and (not has_board) and (not has_notes)
+
+    # If board doesn't exist AND we should create examples, create with examples
+    if not has_board and should_create_examples:
         example_board = build_example_board(lang)
         board_path.write_text(
             json.dumps(example_board, indent=2, ensure_ascii=False) + "\n",
@@ -257,9 +273,15 @@ def ensure_board_exists():
         for task_id, content in get_example_task_descriptions(lang).items():
             write_task_md(task_id, content)
         created_examples = True
+    elif not has_board and not should_create_examples:
+        # In git repo or have partial data - create empty board instead
+        board_path.write_text(
+            json.dumps(EMPTY_BOARD, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8"
+        )
 
-    # If notes don't exist, create with examples
-    if not notes_path.exists():
+    # If notes don't exist AND we should create examples, create with examples
+    if not has_notes and should_create_examples:
         example_notes = build_example_notes(lang)
         notes_path.write_text(
             json.dumps(example_notes, indent=2, ensure_ascii=False) + "\n",
@@ -269,6 +291,12 @@ def ensure_board_exists():
         for note_id, content in get_example_note_contents(lang).items():
             write_note_md(note_id, content)
         created_examples = True
+    elif not has_notes and not should_create_examples:
+        # In git repo or have partial data - create empty notes instead
+        notes_path.write_text(
+            json.dumps(EMPTY_NOTES, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8"
+        )
 
     # Set example tag groups in settings when creating initial examples
     if created_examples:
@@ -1133,7 +1161,21 @@ def favicon():
 
 
 def has_example_data() -> bool:
-    """Check if example tasks or notes exist in current data."""
+    """Check if example tasks or notes exist in current data.
+    
+    Only returns True if:
+    1. Not in a git repo (i.e., not a cloned/synced setup)
+    2. AND example task/note IDs are present
+    
+    This prevents showing "clear examples" button on cloned data
+    where IDs 1-7 might be legitimate user content.
+    """
+    # If in a git repo, don't show clear examples button
+    # (it's a cloned/synced repo, not a fresh example install)
+    from .git_sync import is_git_repo
+    if is_git_repo():
+        return False
+
     # Check for example task IDs (1-7)
     board_path = get_board_path()
     if board_path.exists():
